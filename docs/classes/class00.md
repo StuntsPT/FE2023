@@ -4,10 +4,11 @@
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
-<center>Francisco Pina Martins</center>
+Francisco Pina Martins
 
-<center>[@FPinaMartins](https://twitter.com/FPinaMartins) (Twitter)</center>
-<center>[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)</center>
+[@FPinaMartins](https://twitter.com/FPinaMartins) (Twitter)
+
+[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)
 
 ---
 
@@ -15,11 +16,9 @@
 
 **1ª semana**
 
-* 26-10-2020 – Introdução à disciplina; organização e tratamento de dados
-* 27-10-2020 – Introdução ao R
-* 28-10-2020 – **Dia de Ciências**
-* 29-10-2020 – Gráficos em R
-* 30-10-2020 – *Revisão de conceitos estatísticos*
+* 16-03-2021 – Introdução à disciplina;
+* 17-03-2021 – 
+* 18-03-2021 – 
 
 |||
 
@@ -27,11 +26,9 @@
 
 **2ª semana**
 
-* 02-11-2020 – Testes de hipóteses
-* 03-11-2020 – Testes de hipóteses II
-* 04-11-2020 – **Journal Club** (14-16h) - Seminário
-* 05-11-2020 – Análise exploratória
-* 06-11-2020 – Automatização e reprodutibilidade
+* 23-03-2021 – 
+* 24-03-2021 – 
+* 25-03-2021 – 
 
 |||
 
@@ -39,11 +36,11 @@
 
 **3ª semana**
 
-* 09-11-2020 – Revisões (14h-16h) - Seminário
-* 10-11-2020 – **Apresentações**
-* 11-11-2020 – **Apresentações**
-* 12-11-2020 – Exercícios
-* 13-11-2020 – **Exame TP**
+* 30-03-2021 – Journal Club
+
+------------
+
+* 09-04-2021 – **Avaliação**
 
 ---
 
