@@ -4,10 +4,11 @@
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
-<center>Francisco Pina Martins</center>
+Francisco Pina Martins
 
-<center>[@FPinaMartins](https://twitter.com/FPinaMartins)</center>
-<center>[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)</center>
+[@FPinaMartins](https://twitter.com/FPinaMartins)
+
+[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)
 
 ---
 
@@ -15,16 +16,13 @@
 
 ### What is Epidemiology?
 
-<ul>
-<li class="fragment">The word comes from Greek:</li>
-<ul>
-  <li class="fragment">*epi* (on or upon)</li>
-  <li class="fragment">*demos* (people)</li>
-  <li class="fragment">*logos* (the study of)</li>
-</ul>
-<li class="fragment">What happens to a population</li>
-<li class="fragment">"Study of the distribution and determinants of health related states or events in specified populations and its application to the control of health problems"</li>
-</ul>
+* &shy;<!-- .element: class="fragment" -->The word comes from Greek:
+  * &shy;<!-- .element: class="fragment" -->*epi* (on or upon)
+  * &shy;<!-- .element: class="fragment" -->*demos* (people)
+  * &shy;<!-- .element: class="fragment" -->*logos* (the study of)
+* &shy;<!-- .element: class="fragment" -->What happens to a population
+* &shy;<!-- .element: class="fragment" -->"Study of the distribution and determinants of health related states or events in specified populations and its application to the control of health problems"
+
 
 Insert Image here (like greek columns)
 
@@ -32,13 +30,11 @@ Insert Image here (like greek columns)
 
 ### Studying epidemiology
 
-<ul>
-<li class="fragment">Biologists</li>
-<li class="fragment">Medical Doctors</li>
-<li class="fragment">Public Health Specialists</li>
-<li class="fragment">Statisticians</li>
-<li class="fragment">Computational Scientists</li>
-</ul>
+* &shy;<!-- .element: class="fragment" -->Biologists
+* &shy;<!-- .element: class="fragment" -->Medical Doctors
+* &shy;<!-- .element: class="fragment" -->Public Health Specialists
+* &shy;<!-- .element: class="fragment" -->Statisticians
+* &shy;<!-- .element: class="fragment" -->Computational Scientists
 
 Insert image of studying, or intersections, or multidisciplinarity
 
@@ -46,7 +42,37 @@ Insert image of studying, or intersections, or multidisciplinarity
 
 ### A bit of history
 
-Need to research this: Important scientists, cases and landmarks
+* Jon Snow: 1813-1858
+* Cholera: Death rate > 50% without medical attention
+* 1830 and 1840
+* Cause was unknown (stench and blood were pointed as culprits)
+* 1849 - JS links Cholera and digestive system (vomiting and diarrhea)
+* *Vibrio choleara*; passed via dirty water
+* Tested on the next pandemic
+* JS looked at where people who died were getting their water from
+  * Southwark and Vauxhall (Thames) company were 14 time more likely to die than Lamberth (Upstream, **before** "sewage")
+  * This showed it was waterborne and sanitation would save everyone
+* Another JS study - In Soho, where 500 people died of cholera
+  * JS went knocking on doors and asking where people got their water from, and wether they had cholera or not;
+  * SOHO MAP! JS makred every death; almost all around Broad Street water pump
+  * People form the brewery across the street were not sick - they drank beer, not water
+  * People who died far way, had passed by the pump on their commute
+  * Suzetta Eli was the last link - she lived far, and died, but she loved that water so much, she had it delivered
+  * Snow demanded the handle of the pump be removed. It was, and he saved the city. Went to history books as the father of Epidemiology
+* How did the well got contaminated?
+  * Rev. Henry Whitehead wanted to prove JS wrong - clamied divine intervention
+  * Discovered "Patient Zero": A 5 year old who had died of cholera just before the epidemic started.
+  * Her mother had washed the vomit and diarrhea in the cesspit next to the pump
+* JS was unsure wether removing the pump really made any difference
+  * Cases were going down - many dead, many leaving the area out of fear
+  * What would have happened if the pump had kept on working?
+    * Related with the water companies from earlier
+* JS was able to figfure everything out, without treating a single patient. He just used "Big data", and his brains
+* Cholera is still an important subject, even today (Haiti 2010)
+  * DNA sequencing revealed the starins were similar to those from Nepal, where UN troops had just been summoned from.
+  * Sanitation ::down arrow::, cholera ::up arrow::
+
+
 
 ---
 
@@ -129,9 +155,6 @@ A fraction of the population remains susceptibe as the epidemic self limits itse
 Duration of the epidemic depends on:
 * duration of infectious period
 * latent period (time between being infected and infecting)
-
-
-
 
 ---
 
