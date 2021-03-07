@@ -16,9 +16,9 @@ Francisco Pina Martins
 
 **1ª semana**
 
-* 16-03-2021 – Introdução à disciplina;
-* 17-03-2021 – 
-* 18-03-2021 – 
+* 16-03-2021 – Introdução à epidemiologia; (História e conceitos)
+* 17-03-2021 – R0; RE; Epidemic curve
+* 18-03-2021 – Social Networks
 
 |||
 
@@ -26,9 +26,9 @@ Francisco Pina Martins
 
 **2ª semana**
 
-* 23-03-2021 – 
-* 24-03-2021 – 
-* 25-03-2021 – 
+* 23-03-2021 – Control and vaccines
+* 24-03-2021 – Putting it all together
+* 25-03-2021 – Journal Club
 
 |||
 
@@ -36,7 +36,7 @@ Francisco Pina Martins
 
 **3ª semana**
 
-* 30-03-2021 – Journal Club
+* 30-03-2021 – Revisões
 
 ------------
 
