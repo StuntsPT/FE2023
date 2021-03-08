@@ -17,7 +17,7 @@ Francisco Pina Martins
 **1ª semana**
 
 * 16-03-2021 – Introdução à epidemiologia; (História e conceitos)
-* 17-03-2021 – R0; RE; Epidemic curve
+* 17-03-2021 – Epidemiological measurements; R0; RE; Epidemic curves
 * 18-03-2021 – Social Networks
 
 |||
