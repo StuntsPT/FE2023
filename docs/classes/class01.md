@@ -120,7 +120,7 @@ Francisco Pina Martins
 
 ---
 
-### Important concepts
+### Base Epidemiological concepts
 
 ---
 
