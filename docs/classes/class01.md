@@ -252,7 +252,7 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->Low resource and time demands
 * &shy;<!-- .element: class="fragment" -->Based on routinely collected data
 * &shy;<!-- .element: class="fragment" -->Causation difficult to prove
-* &shy;<!-- .element: class="fragment" -->Prone to "Ecological fallacy"
+* &shy;<!-- .element: class="fragment" -->Prone to *Ecological fallacy*
 * &shy;<!-- .element: class="fragment" -->No control over bias or confounding effects
 * &shy;<!-- .element: class="fragment" -->1st step for hypothesis proposals
 
@@ -341,7 +341,7 @@ Francisco Pina Martins
 ### References
 
 * [Definition of Epidemiology](https://www.cdc.gov/csels/dsepd/ss1978/lesson1/section1.html)
-* [Medical Microbiology (Chapter 9: Epidemiology](https://www.ncbi.nlm.nih.gov/books/NBK7993/)
+* [Medical Microbiology (Chapter 9: Epidemiology)](https://www.ncbi.nlm.nih.gov/books/NBK7993/)
 * [The story of John Snow](https://sphweb.bumc.bu.edu/otlt/mph-modules/ph/publichealthhistory/publichealthhistory6.html)
 * [Types of epidemiological studies](https://link.springer.com/protocol/10.1007%2F978-1-60327-416-6_3)
 * [Randomized clinical trials types](https://doi.org/10.11613/BM.2014.022)
