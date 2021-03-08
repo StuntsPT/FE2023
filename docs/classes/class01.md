@@ -37,11 +37,15 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->Statisticians
 * &shy;<!-- .element: class="fragment" -->Computational Scientists
 
-Insert image of studying, or intersections, or multidisciplinarity
+<img src="C01_assets/superheroes.jpg" style="background:none; border:none; box-shadow:none;" class="fragment">
 
 ---
 
 ### A bit of history
+
+---
+
+### The birth of a discipline
 
 <div class="r-stack">
   <img class="fragment" src="C01_assets/JS01.png">
@@ -55,7 +59,7 @@ Insert image of studying, or intersections, or multidisciplinarity
 
 ---
 
-### A bit of history
+### Outbreaks. Outbreaks everywhere
 
 * &shy;<!-- .element: class="fragment" -->Cause was unknown (*Miasma theory*)
 * &shy;<!-- .element: class="fragment" -->JS looked at water sources
@@ -69,7 +73,7 @@ Insert image of studying, or intersections, or multidisciplinarity
 
 ---
 
-### A bit of history
+### Not on ~~night's~~ my watch!
 
 * &shy;<!-- .element: class="fragment" -->1954 - Outbreak in Soho
   * &shy;<!-- .element: class="fragment" -->500 dead
@@ -93,14 +97,147 @@ Insert image of studying, or intersections, or multidisciplinarity
 
 ---
 
+### The 5 epidemiological questions
+
+<div  style="float:right; width:20%;" class="fragment">
+<p style="font-size:800px">?</p>
+</div>
+
+<div style="float:left; width:80%;">
+
+* &shy;<!-- .element: class="fragment" -->Just like in journalism:
+  * &shy;<!-- .element: class="fragment" -->What?
+    * &shy;<!-- .element: class="fragment" -->A new respiratory system disease!
+  * &shy;<!-- .element: class="fragment" -->Who?
+    * &shy;<!-- .element: class="fragment" -->Mostly adults!
+  * &shy;<!-- .element: class="fragment" -->Where?
+    * &shy;<!-- .element: class="fragment" -->Wuhan, China!
+  * &shy;<!-- .element: class="fragment" -->When?
+    * &shy;<!-- .element: class="fragment" -->December 2019!
+  * &shy;<!-- .element: class="fragment" -->Why/How?
+    * &shy;<!-- .element: class="fragment" -->New type of coronavirus!/Droplet transmission!
+</div>
+
+---
+
+### Important concepts
+
+---
+
+### Epidemiological Concepts I
+
+<div style="float:left; width:70%;" class="fragment">
+
+* **Determinants**
+  * Causes that influence disease occurrence
+* **Risk-factor**
+  * Any studied agent that can *potentially* influence disease occurrence
+* Both are disease specific
+
+</br>
+</br>
+
+</div>
+
+<div  style="float:right; width:30%;" class="fragment">
+</br>
+<img src="C01_assets/risk.png" style="background:none; border:none; box-shadow:none;">
+</div>
+
+<div style="float:left; width:70%;" class="fragment">
+
+* **Sentinel cases**
+  * First reported cases
+* **Epidemic**
+  * Sudden **regional** rise in disease occurrence
+* **Pandemic**
+  * Sudden **global** rise in disease occurrence
+
+</div>
+
+<div  style="float:right; width:30%;" class="fragment">
+<img src="C01_assets/covid.png" style="background:none; border:none; box-shadow:none;">
+</div>
+
+---
+
+### Epidemiological Concepts II
+
+<div style="float:left; width:70%;" class="fragment">
+
+* **Ecological fallacy**
+  * Assume that a given relationship found in grouped data is also true at individual level
+* **Biological fallacy**
+  * Assume that a given relationship found at individual level is also true in grouped data
+</br>
+</br>
+
+</div>
+
+<div  style="float:right; width:30%;" class="fragment">
+</br>
+<img src="C01_assets/fallacy.png" style="background:none; border:none; box-shadow:none;">
+</div>
+
+<div style="float:left; width:70%;" class="fragment">
+
+* **Mortality**
+  * Deaths due to the studied disease
+* **Morbility**
+  * Diseased subjects
+
+</div>
+
+<div  style="float:right; width:30%;" class="fragment">
+<img src="C01_assets/skull.png" style="background:none; border:none; box-shadow:none;">
+</div>
+
+---
+
+### Epidemiological measurements
+
+---
+
+### Measurement types
+
+* &shy;<!-- .element: class="fragment" -->**Frequency** measurements
+  * &shy;<!-- .element: class="fragment" -->Describe disease occurrence
+* &shy;<!-- .element: class="fragment" -->**Association** measurements
+  * &shy;<!-- .element: class="fragment" -->Measure association strength between *exposition* (independent variable) and *outcome* (dependent variable)
+* &shy;<!-- .element: class="fragment" -->**Impact** measurements
+  * &shy;<!-- .element: class="fragment" -->Measure prevention potential if exposition is eliminated
+
+<img src="C01_assets/calibre.png" style="background:none; border:none; box-shadow:none;" class="fragment">
+
+---
+
+### Common frequency measurements
+
+* &shy;<!-- .element: class="fragment" -->**Incidence**
+ * &shy;<!-- .element: class="fragment" -->Frequency at which new disease cases **arise** in a given time frame
+* &shy;<!-- .element: class="fragment" -->**Prevalence**
+ * &shy;<!-- .element: class="fragment" -->Number of **active cases** in any moment in time
+* &shy;<!-- .element: class="fragment" -->**Mortality** and **survivability** can be considered **Incdence** variants
+
+<img src="C01_assets/prevalence.gif" style="background:none; border:none; box-shadow:none;" class="fragment">
+
+---
+
+### Epidemiological study design
+
+---
+
 ### Epidemiological study design
 
 * &shy;<!-- .element: class="fragment" -->Observational
   * &shy;<!-- .element: class="fragment" -->Descriptive
   * &shy;<!-- .element: class="fragment" -->Analytical
+    * &shy;<!-- .element: class="fragment" -->*Cross-sectional*
     * &shy;<!-- .element: class="fragment" -->*Prospective/follow up*
     * &shy;<!-- .element: class="fragment" -->*Retrospective/case-control*
 * &shy;<!-- .element: class="fragment" -->Interventional
+    * &shy;<!-- .element: class="fragment" -->*Randomized*
+    * &shy;<!-- .element: class="fragment" -->*Non-Randomized*
 
 </br>
 <img src="C01_assets/planning.jpg" style="background:none; border:none; box-shadow:none;" class="fragment">
@@ -135,12 +272,19 @@ Insert image of studying, or intersections, or multidisciplinarity
 * &shy;<!-- .element: class="fragment" -->Find relationships between health status and other (risk) variables
 * &shy;<!-- .element: class="fragment" -->Can be somewhat controlled for bias and confounding factors
 * &shy;<!-- .element: class="fragment" -->Easier to make causal inferences than descriptive studies
+ * &shy;<!-- .element: class="fragment" -->**Cross-sectional** (snapshot in time)
  * &shy;<!-- .element: class="fragment" -->**Prospective/follow up** 
    * &shy;<!-- .element: class="fragment" -->Exposed Vs. unexposed samples
    * &shy;<!-- .element: class="fragment" -->Focused on **risk factor effects**
  * &shy;<!-- .element: class="fragment" -->**Retrospective/case-control** (diseased vs. healthy samples)
    * &shy;<!-- .element: class="fragment" -->Diseased Vs. Healthy samples
    * &shy;<!-- .element: class="fragment" -->Focused on **disease causes**
+
+|||
+
+### Cross-sectional studies
+
+<img src="C01_assets/Cross-section.png" style="background:none; border:none; box-shadow:none;">
 
 |||
 
@@ -158,28 +302,27 @@ Insert image of studying, or intersections, or multidisciplinarity
 
 ### Interventional studies
 
-* Involve changing variables in one or more samples
-  * Compare outcomes between changed and kept samples
-* Can be of various types:
-  * Randomized control trial (golden standard)
-  * Field trials
-  * Community trials
+*  &shy;<!-- .element: class="fragment" -->Involve changing variables in one or more samples
+  *  &shy;<!-- .element: class="fragment" -->Compare outcomes between changed and kept samples
+*  &shy;<!-- .element: class="fragment" -->Can be of various types:
+  *  &shy;<!-- .element: class="fragment" -->Randomized control trial (golden standard)
+  *  &shy;<!-- .element: class="fragment" -->Field trials
+  *  &shy;<!-- .element: class="fragment" -->Community trials
 
-Insert picture here
+<img src="C01_assets/Clin-trials.png" style="background:none; border:none; box-shadow:none;" class="fragment">
 
 ---
 
 ### Randomized control trial
 
-* Usually performed on 2 groups
-  * (But can be more)
-* Subjects are randomly distributed between groups
-* One (or more) group is provided with a treatment (**treatment group**)
-* One group is provided with no treatment, or with a standard treatment (**control group**)
-* Outcomes are compared
-* [Many sub-types](https://doi.org/10.11613/BM.2014.022)!
+* &shy;<!-- .element: class="fragment" -->Performed on 2 (or more) groups
+* &shy;<!-- .element: class="fragment" -->Subjects are randomly distributed between groups
+* &shy;<!-- .element: class="fragment" -->One group is provided with no treatment, or with a standard treatment (**control group**)
+* &shy;<!-- .element: class="fragment" -->Other groups are provided with a treatment (**treatment group**)
+* &shy;<!-- .element: class="fragment" -->Outcomes are compared
+* &shy;<!-- .element: class="fragment" -->[Many sub-types](https://doi.org/10.11613/BM.2014.022)!
 
-Image of gold
+<img src="C01_assets/gold.jpg" style="background:none; border:none; box-shadow:none;" class="fragment">
 
 |||
 
@@ -189,9 +332,9 @@ Image of gold
 
 ---
 
-### Non-randomized trials
+### Epidemiological study design summary
 
-
+<img src="C01_assets/study_scheme.png" style="background:none; border:none; box-shadow:none;">
 
 ---
 
