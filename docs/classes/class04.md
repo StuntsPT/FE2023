@@ -1,4 +1,4 @@
-### Class #4
+### Class #3
 
 #### Fundamentos de Epidemiologia 2021
 
@@ -12,95 +12,99 @@ Francisco Pina Martins
 
 ---
 
-## Control and vaccines
+## Social Networks
 
 ---
 
-## Control
+### Social networks
 
-* Prevention
-  * Avoid contractin
-  * Avoid spread
-  * Both require knowlage on how the disease is spread
-* Treatment
-  * symproms
-  * cure
-  * stop spread
-
-* At the population level:
-  * communities
-  * structure
-  * policy
-* Surveilance
-* Sicence
-* Behaviour change
-* Hard to implement
-
-* Some recommendations at the popular level may be unpopular
-  * reduce personal freedom
-  * exepnsive
+* People connected that can infect someone else
+* AKA - a graph
+  * Each person is a "node"
+  * Connections are "meshes"
+* This is like a road where the disiese can travel
+* Each disiese has it's own social network
+* Some networks are similar (Eg. DSTs)
+* Flu is very different from Malaria
+* Contact tracing
+  * Be on the case very early
+  * Identify all the contact a case has had in the recent past
+  * Follow up with all the contacts (quarenten, etc)
+  * 2014 Ebola
+  * 2015 MERS
+  * Used to cut off potentially infected nodes from further progressing the infection chain
+  * This is hard to get data - very hard ot measure; resource intensive; doesn't scale
+    * Schools, houseolds, hospitals, can be mapped
+    * Can be used as proxies to a population
+    * More efficient ways to map these networks are needed; dive deeper into social network structure
 
 ---
 
-## Vaccine impact
+### Network structure
 
-* Quantifying the worldwide impact of vaccinations is not trivial
-* UCCP compared 8 infections before and after vaccination:
-  * Small Pox: erradicated
-  * Pertussis: -96%
-  * Measles, Mumps and Rubella: -99%
+* Knowing the network strucure helps understand how to best control a disiese
+* We can reduce their complexity by loking at general network structural proprieties
+* **Degree distribution** - The degree of a node, is the number of edges it has
+ * Count the number of edges at each node, and look at the distribution of these degrees over the entire network (histogram)
+ * Example network - 500 nodes and 2500 edges
+   * Get the degree of each node
+   * Build an histogram of degree frequency
+   * How does this affect R0?
+     * Get any random node as the first infected
+     * Figure the probability of disease transmission per contact (L * Beta = Per contact probability)
+   * A High degree aids the spread of a disease
+   * If every node had the same degree, R0 = L * Beta * K, where K = average degree
+   * In reality, not everyone has the same number of contacts though
+   * When all else is equal, UP(Variance) leads to UP(R0)
+   * R0 = Beta * L * K * (1 + sigma²/K²)
+     * Example where increasing degree variance leads to a much higher R0
+     * This is why understanding the social network is so important
+     * **Reducing the number of contacts, or reducing the variance of degree are both ways to reduce R0
+     * An efficient strategy it to target nodes with very high degrees
 
-* If we could keep track of all cases, it would be easy to quantify (we can't)
-* Relying on health record alone, is likely to underestimate the number of infections
-* Keeping track of every dose of vaccine given, we can at least estimate the expected number of infections prevented
-  * Not all doeses stimulate imminity
-  * Infants recieve less immunization
-  * Vaccinating an individual has the side-effect of preventing transission to everyone they might have infected
-  * Each dose of vaccine is likely to protect, on average, more than one individual
-  * Models are employed to combine the observed changes in the number of cases, with estimates of direct and indirect vaccine protections
-* OMS estimates:
-  * -62% measles cases worldwide
-  * -74% child mortality due to measels
-* Simple counts of cases do not account for severity of disease
-  * DALY - "Disablity Adjusted Life Years"
-    * Sum of the years of life lost due to:
-      * Premature mortality
-      * disablity while infected
-    * Avg. duration of disease and multiply it by a wieghting factor from 0 (perfect health) to 1 (death)
+Exercício: Dar um social network, pedir para identificar os nodes melhores para isolar de forma a reduzir o R0
 
 ---
 
-## Herd Immunity
+## Superspreaders
 
-* Indirect protection
-  * Both direct and inderc mmust be considered
-* What will be the impact of immunizing a fraction `P` of the population?
-  * `P = proportion of vaccinated individuals * Vaccine efficacy` (Probability that a vaccinated individual will successfully develop immunity)
-  * R0 is a function of the number of susceptible individuals
-  * Immunizing individuals at birth reduces the rate at which susceptible hosts are replenished
-  * We thus get Re = (1 - P) * R0
-    * Re is the expected number of infections due to a single infection (must be > 1 for establishing)
-    * Solving the equation for `P` we can calculate the fraction of the population that needs to be immunized for Re < 1
-    * P > 1 - (1 / R0)
-    * An epidemic can be stopped on it's tracks by immunizing less than 100% of all hosts
-  * As R0 increases, the porportion of vaccinated population also needs to increase
-  * For something like smallpox (R0 = 5) we need to immunize ~80% of childeren
-  * For Mumps or Chicken pox, where R0 ~ 10, we need to immunize ~90% of children
-  * For whooping cough ou measles, where R0 ~ 20, we need to immunize ~95% of children
-* Note **imminuzed**, not **vaccinated**
-  * Since vaccines are less than 100% effective, sometimes vaccination alone is unable to erradicate pathogens with high transmissability
-* Indirect effects (% population infected at any given time, is expected to decrease with the increase in vaccination coverage)
-* Even if herd immunity cannot be reached with vaccination alone, it increases the chance of local elimination, due to stochasticity
-  * Keep in mind that in this case, vaccination needs to be continuous, to avoid the susceptible pool to increase and cause a new epidemic
+* When disease parameters are considered the same, it is assumed there is an homegenity across the population of susceptibles;
+  * Individual variaton is of lesser importance in face of the larger epidemic
+* But this might, in fact, not be true. There can be a great deal of variation in the number of secondary infections generated by an infeccious host
+  * Long infectious period
+  * Shed a large number of pathogens
+  * Or they have many contacts
+* Mary Malone - Typhoid Mary (assymptomatic carrier)
+* 38 years!
+* She was a cook and did not have the habit of washing her hands
+  * She was a cook, people became ill and she'd move on to a new job, infecting more people
+* A superspreader (50 confirmed infections)
+  * Term was coined during the 2002-2003 SARS outbreak
+  * First cas was an airline steward, who brought the infection from Hong Kong, and infectd her friends, family and priest, most of whom died
+  * Another individual she had infected, infected 143 individuals, including **all** doctors and nurses that treated her
+  * Most other people hardly infected anyone else
+  * Statistically, what would we call the expectation for the frequency distrubution of secondary cases per affected host?
+    * At first, this may look like a random distribution - some individuals infect none, others, few. (Wrong!)
+    * Unfair distribution - a small number of individuals caused the majority of secondary cases, but most individuals don't infect anyone
+    * Similar pattern to measles, monkeypox, smallpox, pneumonic plague among others
+    * Kind of common
+  * Two very important consequences:
+    * When the highly infectious individuals are also the most susceptible - infection spreads very fast (High R0)
+    * If we can identify spreader traits, these few individuals can be targetted for treatment or intervention
 
 ---
 
-## Survilance and Disclosure
+## Spatial Hereogenity
 
-Survilance:
- * Watchin over someone and record it
- * Depends on communication
+* Cities as arenas for evolution and ecology of human infections
+* Island-mainland metapopulation dynamics
+* Hierarchical diffusion
+  * can be predicted by "gravity models of human mobility"
 
-Disclosure:
- * Speaking
- * Listening
+---
+
+## Movement and modern transportation
+
+* Enemy release
+  * Movement to new places often reduces disease burden
+* The British made ameican natives gifts of blankets from smallpox hospitals...
