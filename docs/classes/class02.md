@@ -207,8 +207,7 @@ CFr = 2620424/118125509  # 0.02218
 
 &shy;<!-- .element: class="fragment" data-fragment-index="3" -->![Exposed-Diseased table](C02_assets/E_D_table.png)
 
-&shy;<!-- .element: class="fragment" data-fragment-index="4" -->`$$ r_E=\frac{a}{a+b}$$`
-`$$ r_\bar{E}=\frac{c}{c+d} $$`
+&shy;<!-- .element: class="fragment" data-fragment-index="4" -->`$$ r_E=\frac{a}{a+b} \;\;\;\; r_\bar{E}=\frac{c}{c+d} $$`
 
 &shy;<!-- .element: class="fragment" data-fragment-index="5" -->`$$ RR=\frac{r_E}{r_\bar{E}}$$`
 
@@ -250,8 +249,7 @@ RR = Rexp/RNexp  # 6.108 - East Wing inmates are 6.1x more likely to be infected
 
 &shy;<!-- .element: class="fragment" data-fragment-index="3" -->![Exposed-Diseased table](C02_assets/E_D_table_small.png)
 
-&shy;<!-- .element: class="fragment" data-fragment-index="4" -->`$$ o_E=\frac{\frac{a}{a+b}}{\frac{b}{a+b}}=\frac{a}{b}$$`
-`$$ o_\bar{E}=\frac{\frac{c}{c+d}}{\frac{d}{c+d}}=\frac{c}{d}$$`
+&shy;<!-- .element: class="fragment" data-fragment-index="4" -->`$$ o_E=\frac{\frac{a}{a+b}}{\frac{b}{a+b}}=\frac{a}{b} \;\;\;\;\; o_\bar{E}=\frac{\frac{c}{c+d}}{\frac{d}{c+d}}=\frac{c}{d}$$`
 
 &shy;<!-- .element: class="fragment" data-fragment-index="5" -->`$$ OR=\frac{\frac{a}{b}}{\frac{c}{d}}=\frac{ad}{cb}$$`
 

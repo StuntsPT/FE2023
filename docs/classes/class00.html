@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Epidemiological Measurements; Epidemic curves</title>
+		<title>Presentation</title>
 
 		<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
 		<link rel="stylesheet" href="../reveal.js/dist/theme/night.css">
@@ -25,7 +25,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown="class02.md"
+				<section data-markdown="class00.md"
 				         data-separator-vertical=^\r?\n\|\|\|\r?\n$>
 				</section>
 			</div>
@@ -34,17 +34,10 @@
                 <script src="../reveal.js/plugin/markdown/markdown.js"></script>
                 <script src="../reveal.js/plugin/highlight/highlight.js"></script>
                 <script src="../reveal.js/plugin/notes/notes.js"></script>
-		<script src="../reveal.js/plugin/math/math.js"></script>
 
 		<script>
 
 			Reveal.initialize({
-                                math: {
-                                       mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
-                                       config: 'TeX-AMS_HTML-full',
-                                       // pass other options into `MathJax.Hub.Config()`
-                                       TeX: { Macros: { RR: "{\\bf R}" } }
-                                       },
 				width: 1336,
 				height: 768,
 				margin: 0.15,
@@ -53,7 +46,7 @@
 				history: true,
 				center: true,
 
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 
 		</script>
