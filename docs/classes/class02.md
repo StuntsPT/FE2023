@@ -44,11 +44,11 @@ Francisco Pina Martins
 
 <div style="float:left; width:70%;" class="fragment">
 
-* In epidemiology *rate* frequently refers to *Incidence Rate*
-  * (Numb. disease occurrences)/(Person-Year of risk exposure)
-  * But what does this mean?
+* Num. new cases per risk period time unit
+`$$ IR = \frac{N_c}{\sum {R_p}[person-time]} $$`
 
 </div>
+
 
 <div style="float:right; width:30%;" class="fragment">
 
@@ -56,6 +56,13 @@ Francisco Pina Martins
 
 </div>
 
+<div style="float:left; width:100%;" class="fragment">
+
+* Where:
+  * Nc = Num. new cases in a given time period
+  * Rp = Time period during which a subject was considered at risk
+
+</div>
 
 <div style="float:left; width:100%;" class="fragment">
 
@@ -92,6 +99,8 @@ IR = 3/TPY  # 0.207 cases/p-y (kind of meaningless)
 
 ### CI example
 
+![person-year-plot](C02_assets/py-plot.png)
+
 ```R
 # Using data from the previous example
 CI = 3/5
@@ -115,6 +124,8 @@ CI = 3/5
 |||
 
 ### Prevalence example
+
+![person-year-plot](C02_assets/py-plot.png)
 
 ```R
 # Data from previous example
@@ -179,7 +190,7 @@ CFr = 2620424/118125509  # 0.02218
 
 ---
 
-## Risk Ratio (RR)
+### Risk Ratio (RR)
 
 <div style="float:left; width:45%;">
 
@@ -222,7 +233,7 @@ RR = Rexp/RNexp  # 6.108 - East Wing inmates are 6.1x more likely to be infected
 
 ---
 
-## Odds Ratio (OR)
+### Odds Ratio (OR)
 
 <div style="float:left; width:45%;">
 
@@ -248,7 +259,7 @@ RR = Rexp/RNexp  # 6.108 - East Wing inmates are 6.1x more likely to be infected
 
 |||
 
-## OR example
+### OR example
 
 Incidence of *Mycobacterium tuberculosis* Infection Among Congregated, HIV-Infected Prison Inmates by Dormitory Wing — South Carolina, 1999
 
@@ -269,7 +280,7 @@ fisher.test(Inmates)
 
 ---
 
-## RR Vs. OR
+### RR Vs. OR
 
 * &shy;<!-- .element: class="fragment" -->*Risk* refers to the probability of occurrence of an event/**all possible events**
 * &shy;<!-- .element: class="fragment" -->*Odds* refers to the probability of occurrence of an event/**probability of the event not occurring**
@@ -283,85 +294,237 @@ fisher.test(Inmates)
 
 &shy;<!-- .element: class="fragment" -->[Would you like to know more?](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4640017/)
 
+---
+
+### Plotting (again) & other tricks
 
 ---
 
-### Some key concepts
+### Frequency data
 
-Concept of infection (replication of a foreign organism != disiese, the clinical symptoms experienced by the host)
-Pathogens
-Symptomatic and asymptomaic infection
-Transmission
-Correlation between symptoms and infectiousness
-Infectious period
-Resistant != susceptible
+* Let's get back to our tuberculosis table
+
+![Tuberculosis table](C02_assets/E_D_table_example.png)
+
+|||
+
+### Pie chart
+
+<div style="float:right; width:35%;">
+
+![Pie chart tuberculosis](C02_assets/tub_pie.png)
+
+[Picking colours](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
+
+</div>
+
+<div style="float:left; width:65%;">
+
+```R
+library(colorspace)
+
+# Fisrt let's create our table:
+tub_table = matrix(c(28, 129, 4, 133), nrow=2, byrow=T)
+colnames(tub_table) = c("Diseased", "Healthy")
+rownames(tub_table) = c("East wing", "West wing")
+
+print(tub_table)
+
+rel_tub_table = proportions(tub_table, 1)  # Notice the "margin" argument!
+
+print(rel_tub_table)
+
+pie(tub_table, col=sequential_hcl(4), 
+    labels=c(paste(colnames(tub_table)[1],"/",rownames(tub_table)[1]),
+             paste(colnames(tub_table)[1],"/",rownames(tub_table)[2]),
+             paste(colnames(tub_table)[2],"/",rownames(tub_table)[1]),
+             paste(colnames(tub_table)[2],"/",rownames(tub_table)[2])))
+
+```
+</div>
+
+|||
+
+### Bar plot
+
+<div style="float:right; width:35%;">
+
+![Pie chart tuberculosis](C02_assets/tub_bar.png)
+
+[Picking colours](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
+
+</div>
+
+<div style="float:left; width:65%;">
+
+```R
+library(colorspace)
+
+tub_table = matrix(c(28, 129, 4, 133), nrow=2, byrow=T)
+colnames(tub_table) = c("Diseased", "Healthy")
+rownames(tub_table) = c("East wing", "West wing")
+
+print(tub_table)
+
+rel_tub_table = proportions(tub_table, 1)  # Notice the "margin" argument!
+
+print(rel_tub_table)
+
+barplot(t(tub_table), beside=T, col=sequential_hcl(2),
+        ylim=c(0, max(tub_table)), ylab="Indivíduos", axes=F)
+
+axis(2, at=round(seq(0, max(tub_table), length.out=7), 0), las=1)
+
+legend(3.2, 130 , colnames(tub_table), fill=sequential_hcl(2))     
+
+```
+</div>
 
 ---
 
-### Transmission
+### Quantitative data
 
-Infectious disieses
-* direct 
-  * Airborne (droplets, large and small)
-  * Sexual (such as HIV)
+* &shy;<!-- .element: class="fragment" -->This time we will generate some data!
+* &shy;<!-- .element: class="fragment" -->What is an epidemiology course without zombies?
+* &shy;<!-- .element: class="fragment" -->Let's generate some! (heights)
 
-* inderct (vector transmssion)
-  * Intermediate carrier (objects (formite transmssion))
-  * Waterborne transmission (like cholera)
-  * vectorborne (mosquitos, flies, fleas, etc. (Malaria and dengue, plague))
-* Breaking transmision chains
+<div style="float:right; width:35%;" class="fragment">
+
+![Zombies](C02_assets/zombie.png)
+
+</div>
+
+<div style="float:left; width:65%;" class="fragment">
+
+
+```R
+set.seed(1235813)
+
+# Draw 'random' values from a normal distribution
+Fz = rnorm(50, 1.60, 6)
+Mz = rnorm(50, 1.70, 9)
+
+# Tidy it up in a dataframe
+Zdata = data.frame(Fz, Mz)
+
+# First look at our zombie heights
+summary(Zdata)
+
+```
+
+</div>
+
+|||
+
+### Histograms
+
+<div style="float:left; width:65%;" class="fragment">
+
+```R
+par(mfrow=c(1,2))  # Draw plots on 1 row and 2 columns
+
+# Make sure the limits are comparable on both plots
+hist(Fz, right=FALSE, prob=T, col="#bbbbd5", main="",
+       xlab=" ", ylab="Relative height frequency", ylim=c(0, 0.07))
+mtext("Female zombies",side=1,line=3)
+
+hist(Mz, right=FALSE, prob=T, col="#b1dbbe", main=" ",
+         xlab=" ", ylab="Relative height frequency", ylim=c(0,0.07))
+mtext("Male zombies",side=1,line=3)
+
+# Clean up after our mess
+par(mfrow=c(1,1))
+```
+
+</div>
+
+<div style="float:right; width:35%;" class="fragment">
+
+![Zombie heights' histogram](C02_assets/z_hist.png)
+
+</div>
+
+|||
+
+### Boxplots
+
+<div style="float:right; width:35%;" class="fragment">
+
+![Zombie heights' histogram](C02_assets/z_box.png)
+
+</div>
+
+<div style="float:left; width:65%;" class="fragment">
+
+```R
+# Just like that!
+boxplot(Zdata, col=c("#bbbbd5", "#b1dbbe"),
+        names=c("Female","Male"), main="Zombie heights")
+
+```
+
+![Dead simple](C02_assets/dead_simple.png)
+
+</div>
 
 ---
 
-### Reproductive number
+### Time series
 
-* How does it start?
-  * One person must infectat least one
-  * R0
-  * Avg. number of secondary infections generated by the first infected individual in a population of completely susceptible individuals
-* Understangin this pheneomenon helps prevent epidemics from starting, or limiting spread.
+* &shy;<!-- .element: class="fragment" -->When our data is distributed along time, we need to show some continuity
+ * &shy;<!-- .element: class="fragment" -->The best solution depends on what we want to highlight:
+  * &shy;<!-- .element: class="fragment" -->Trend (line plot)
+  * &shy;<!-- .element: class="fragment" -->Individual values (bar plot)
+* &shy;<!-- .element: class="fragment" -->But first let's obtain some data to plot
 
-* What influences R0:
-  * Time an individual is infectious (L, from length)
-  * Number of susceptible hosts (S, for susceptible)
-  * Transmissibility (Beta):
-    * Rate of potentially transmissible ocntacts
-    * How likely is a contact to result in transmission?
-    * Depends on agent and population characteristics 
-* R0 = S * L * Beta
-  * Average!!!
-* Useful for generalizing, but the start depends a lot on where and in whom an epidemic appears
+<div class="fragment">
 
----
+```R
+# Number of new HIV cases in belgium from 2006-2018
+# https://www.statista.com/statistics/645541/new-hiv-cases-diagnosed-belgium/
 
-### Epidemic curve
+cases = c(1018, 1072, 1092, 1115, 1184, 1171, 1228, 1128, 1057, 1020, 909, 899, 882)
+years = c(2006:2018)
 
-Epidemics are rare events
+HIV = data.frame(years, cases)
 
-SIR compartmental framewok (Susceptible, Infected, Removed, over time)
-Random meetings assumed (so all SIR types have random contact)
+</div>
 
-Chain of transmission!
-Evolution of this chain depends on R0
-Individuals go from susceptible to infected to removed
-As susptible pool decreases, an increasing fration of contacts does not lead to new infections
+```
 
-R_E (Effective Reproductive) = R0 * %susceptible population
-If R_E < 1 epidemic is self limiting
-This happens when % susceptibles in pop falls below 1/R0 -> Herd Immunity
+|||
 
-A fraction of the population remains susceptibe as the epidemic self limits itself: Exp(-R0)
+### Line plot
 
-Duration of the epidemic depends on:
-* duration of infectious period
-* latent period (time between being infected and infecting)
+```R
+plot(HIV[,"years"], HIV[,"cases"], pch=16, col="blue", xlab="Year",
+     ylab="New HIV cases", ylim=c(0, max(HIV["cases"])),
+     main="New HIV cases in Belgium per year")
+lines(HIV[,"years"], HIV[,"cases"], col="red", lwd=3)
+```
+
+![Line plot](C02_assets/aids_line.png)
+
+|||
+
+### Bar plot
+
+```R
+p = barplot(cases, col=sequential_hcl(1), xlab="Year",
+     ylab="New HIV cases", ylim=c(0, max(HIV["cases"]) * 1.1),
+     main="New HIV cases in Belgium per year",
+     names.arg=years, las=T)
+text(p, cases + 18, labels=cases)
+```
+
+![Bar plot](C02_assets/aids_bar.png)
 
 ---
 
 ### References
 
-[Person-year](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC4.pdf)
-[Cumulative Incidence](https://sphweb.bumc.bu.edu/otlt/mph-modules/ep/ep713_diseasefrequency/ep713_diseasefrequency4.html)
-[Disease prevalence](https://www.nimh.nih.gov/health/statistics/what-is-prevalence.shtml)
-[Risk Ratio](https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section5.html)
-[RR Vs. OR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4640017/)
+* [Person-year](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC4.pdf)
+* [Cumulative Incidence](https://sphweb.bumc.bu.edu/otlt/mph-modules/ep/ep713_diseasefrequency/ep713_diseasefrequency4.html)
+* [Disease prevalence](https://www.nimh.nih.gov/health/statistics/what-is-prevalence.shtml)
+* [Risk Ratio](https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section5.html)
+* [RR Vs. OR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4640017/)
