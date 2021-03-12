@@ -338,6 +338,14 @@ Francisco Pina Martins
 
 ---
 
+### Before you go!
+
+Consider the following, recent [news article](https://www.bbc.com/news/world-europe-56357760).
+
+What kind of epidemiological study(eis) can be performed to assess whether or not the Oxford-AstraZeneca vaccine is associated with blood clots?
+
+---
+
 ### References
 
 * [Definition of Epidemiology](https://www.cdc.gov/csels/dsepd/ss1978/lesson1/section1.html)
