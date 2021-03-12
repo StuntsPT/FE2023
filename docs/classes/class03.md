@@ -16,15 +16,40 @@ Francisco Pina Martins
 
 ---
 
+### Infectious diseases
+
+* Infectious diseases have always been major killers
+ * Cause illness and/or death
+ * Part of our everyday life 
+* Sometimes a disease can spread very rapidly through a population
+ * **Epidemic!**
+  * Black Death
+  * Spanish flu
+  * COVID-19
+
+![Epidemic](C03_assets/epidemic.png)
+
+---
+
+### Infectious diseases II
+
+* Caused by microorganisms
+ * *Virii*
+ * *Bacteria*
+ * *Monera*
+* Transmitted from person to person
+ * Infection -> replication of foreign organism
+ * Disease -> clinical symptoms
+* We can have symptomatic and asymptomatic infection
+ * Susceptible != resistant
+
+---
+
 ### Some key concepts
 
-Concept of infection (replication of a foreign organism != disiese, the clinical symptoms experienced by the host)
-Pathogens
-Symptomatic and asymptomaic infection
 Transmission
 Correlation between symptoms and infectiousness
 Infectious period
-Resistant != susceptible
 
 ---
 
