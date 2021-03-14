@@ -12,7 +12,7 @@ Francisco Pina Martins
 
 ---
 
-## Epidemiology for the uninitiated
+## Epidemiology jump-start
 
 ---
 
@@ -338,11 +338,113 @@ Francisco Pina Martins
 
 ---
 
-### Before you go!
+### Test your skills!
 
 Consider the following, recent [news article](https://www.bbc.com/news/world-europe-56357760).
 
 What kind of epidemiological study(eis) can be performed to assess whether or not the Oxford-AstraZeneca vaccine is associated with blood clots?
+
+---
+
+### The day that wasn't
+
+---
+
+### Infectious diseases
+
+* Infectious diseases have always been major killers
+ * Cause illness and/or death
+ * Part of our everyday life 
+* Sometimes a disease can spread very rapidly through a population
+ * **Epidemic!**
+  * Black Death
+  * Spanish flu
+  * COVID-19
+
+![Epidemic](C01_assets/epidemic.png)
+
+---
+
+### Infectious diseases II
+
+* Caused by microorganisms
+ * *Virii*
+ * *Bacteria*
+ * *Monera*
+* Transmitted from person to person
+ * Infection -> replication of foreign organism
+ * Disease -> clinical symptoms
+* We can have symptomatic and asymptomatic infection
+ * Susceptible != resistant
+* Infectious period
+
+---
+
+### Transmission
+
+* Direct 
+  * Airborne (droplets, large and small)
+  * Sexual (such as HIV)
+* Indirect
+  * Intermediate carrier (objects)
+  * Waterborne transmission (like cholera)
+  * Vectorborne (mosquitoes, flies, fleas, etc.)
+
+![Risk meme](C01_assets/risk_mask.jpg)
+
+---
+
+### Where does it start?
+
+* One subject gets infected
+ * Transmits the disease causing agent to at least one other person
+* *Avg. number of secondary cases one case would produce in a completely susceptible population*
+ * **R<sub>0</sub>** ("*R naught*")
+* R<sub>0</sub> is a biological reality!
+
+|||
+
+### Estimating R<sub>0<sub>
+
+* Based on 3 essential parameters:
+ * Contagiousness duration after infection (*t*)
+ * Infection likelihood per contact between a susceptible and an infectious person/vector (*S*)
+ * Contact rate (*C*)
+
+`$$ R_0 = t \times S \times C $$`
+
+* Other parameters can be used to further fine-tune the estimate
+ * Environmental factors
+ * Social organization
+ * Seasonality
+* Leads to complex mathematical models
+
+|||
+
+### The dark side of R<sub>0</sub>
+
+* Imprecise
+* Rests on assumptions
+* Hides local variation
+
+---
+
+### An alternative from observable data
+
+* R<sub>t</sub> - *Effective R*
+ * Calculated over time
+ * Consideres intervention
+ * Drops the "entierly susceptible population" assumption
+ * Even harder to model than R<sub>0</sub>
+
+Insert new cases plot
+
+---
+
+### But if you still want to have a go at it...
+
+* [COVID-SIM](http://covidsim.eu/)
+* [Nextstrain](https://nextstrain.org/ncov/global)
 
 ---
 
@@ -353,3 +455,6 @@ What kind of epidemiological study(eis) can be performed to assess whether or no
 * [The story of John Snow](https://sphweb.bumc.bu.edu/otlt/mph-modules/ph/publichealthhistory/publichealthhistory6.html)
 * [Types of epidemiological studies](https://link.springer.com/protocol/10.1007%2F978-1-60327-416-6_3)
 * [Randomized clinical trials types](https://doi.org/10.11613/BM.2014.022)
+* [Why R0 is hard](https://wwwnc.cdc.gov/eid/article/25/1/17-1901_article)
+* [The pandemic's misunderstood metric](https://www.nature.com/articles/d41586-020-02009-w)
+* [Calculating a pandemic's variables](https://iris.paho.org/bitstream/handle/10665.2/52405/PAHOIMSPHECOVID-19200031_eng.pdf)
