@@ -164,7 +164,7 @@ CFr = 2620424/118125509  # 0.02218
 
 ### Odds
 
-* &shy;<!-- .element: class="fragment" -->Ratio between an event of prob. *p* and it's complement of prob. (1-*p*)
+* &shy;<!-- .element: class="fragment" -->Ratio between an event of prob. *p* and it's complement (1-*p*)
 
 &shy;<!-- .element: class="fragment" -->`$$ Odds = \frac{p}{1-p} $$`
 * &shy;<!-- .element: class="fragment" -->Eg.: There are 25 frogs in a pond; five are yellow. The *odds* of picking a yellow frog at random are (5/25)/(20/25) = 5/20 = 1/4
@@ -195,8 +195,8 @@ CFr = 2620424/118125509  # 0.02218
 <div style="float:left; width:45%;">
 
 * &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Ratio between Exposed Risk and Unexposed Risk
-* &shy;<!-- .element: class="fragment" data-fragment-index="2" -->rE: probability of becoming diseased, **if exposed**
-* &shy;<!-- .element: class="fragment" data-fragment-index="2" -->rĒ: probability of becoming diseased, **if not exposed**
+* &shy;<!-- .element: class="fragment" data-fragment-index="2" -->r<sub>E</sub>: probability of becoming diseased, **if exposed**
+* &shy;<!-- .element: class="fragment" data-fragment-index="2" -->r<sub>Ē</sub>: probability of becoming diseased, **if not exposed**
  *  &shy;<!-- .element: class="fragment" data-fragment-index="6" -->RR = 1: No risk association
  *  &shy;<!-- .element: class="fragment" data-fragment-index="6" -->RR > 1: Exposition is **risk** factor
  *  &shy;<!-- .element: class="fragment" data-fragment-index="6" -->RR < 1: Exposition is **protection** factor
@@ -229,6 +229,23 @@ RNexp = 4/137
 RR = Rexp/RNexp  # 6.108 - East Wing inmates are 6.1x more likely to be infected than West Wing inmates
 
 ```
+
+---
+
+### Risk Difference (RD)
+
+* Difference in risk between two groups
+* How much **excess risk** is due to exposure of interest
+ * RD > 1: excess risk due to exposure
+ * RD < 1: exposure of interest has a protective effect
+
+`$$ \frac{C_E}{N_E} - \frac{C_\bar{E}}{N_\bar{E}} $$`
+
+* Where:
+ * C<sub>E</sub> = Cases in exposed group
+ * N<sub>E</sub> = Total subjects in exposed group
+ * C<sub>Ē</sub> = Cases in unexposed group
+ * N<sub>Ē</sub> = Total subjects in unexposed group
 
 ---
 
