@@ -512,9 +512,9 @@ What kind of epidemiological study(eis) can be performed to assess whether or no
 
 ### References
 
-* &shy;<!-- .element: class="fragment" -->[Case-control studies in a nutshell](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC5.pdf)
-* &shy;<!-- .element: class="fragment" -->[Epidemiology for the uninitiated](https://thebmj-frontend.bmj.com/about-bmj/resources-readers/publications/epidemiology-uninitiated/8-case-control-and-cross-sectional)
-* &shy;<!-- .element: class="fragment" -->[Follow-up studies in a nutshell](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC6.pdf)
-* &shy;<!-- .element: class="fragment" -->[Follow up in cohort studies](https://sphweb.bumc.bu.edu/otlt/MPH-Modules/EP/EP713_CohortStudies/EP713_CohortStudies4.html)
-* &shy;<!-- .element: class="fragment" -->[Morbidity frequency measures](https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section2.html)
-* &shy;<!-- .element: class="fragment" -->[Confidence intervals](https://www.nlm.nih.gov/nichsr/stats_tutorial/section2/mod2_confidence.html)
+* [Case-control studies in a nutshell](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC5.pdf)
+* [Epidemiology for the uninitiated](https://thebmj-frontend.bmj.com/about-bmj/resources-readers/publications/epidemiology-uninitiated/8-case-control-and-cross-sectional)
+* [Follow-up studies in a nutshell](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC6.pdf)
+* [Follow up in cohort studies](https://sphweb.bumc.bu.edu/otlt/MPH-Modules/EP/EP713_CohortStudies/EP713_CohortStudies4.html)
+* [Morbidity frequency measures](https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section2.html)
+* [Confidence intervals](https://www.nlm.nih.gov/nichsr/stats_tutorial/section2/mod2_confidence.html)
