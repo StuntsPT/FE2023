@@ -157,6 +157,12 @@ Cfr = 2620424/118125509  # 0.02218
 
 ---
 
+### Epidemiologit's bathtub
+
+&shy;<!-- .element: class="fragment" -->![Epidemiologit's bathtub](C02_assets/tub_big.png)
+
+---
+
 ### Odds
 
 * &shy;<!-- .element: class="fragment" -->Ratio between an event of prob. *p* and it's complement (1-*p*)
