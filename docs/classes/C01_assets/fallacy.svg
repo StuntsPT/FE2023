@@ -29,7 +29,7 @@
        inkscape:isstock="true">
       <path
          transform="scale(0.4) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
          id="path2277" />
     </marker>
@@ -58,7 +58,7 @@
        inkscape:collect="always">
       <path
          transform="scale(0.4) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
          id="path1855" />
     </marker>
@@ -93,10 +93,10 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
      inkscape:cx="417.16625"
@@ -118,7 +118,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -127,7 +127,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.224411;stroke-linecap:round"
+       style="fill:none;stroke:#ffffff;stroke-width:0.224411;stroke-linecap:round"
        id="rect1813"
        width="53.114002"
        height="16.704266"
@@ -143,9 +143,9 @@
          id="tspan1815"
          x="81.399292"
          y="41.429733"
-         style="stroke-width:0.264583">Individual</tspan></text>
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Individual</tspan></text>
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.236566;stroke-linecap:round"
+       style="fill:none;stroke:#ffffff;stroke-width:0.236566;stroke-linecap:round"
        id="rect1813-2"
        width="59.066784"
        height="16.69211"
@@ -161,13 +161,13 @@
          id="tspan1815-8"
          x="78.721733"
          y="159.81824"
-         style="stroke-width:0.264583">Population</tspan></text>
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Population</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.41377;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart)"
+       style="fill:none;stroke:#ffffff;stroke-width:1.41377;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart)"
        d="M 95.880451,140.99475 V 50.136475"
        id="path1847" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.41377;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2279)"
+       style="fill:none;stroke:#ffffff;stroke-width:1.41377;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2279)"
        d="M 111.75546,53.250213 V 144.10849"
        id="path2275" />
     <g

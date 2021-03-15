@@ -108,3 +108,12 @@ Exercício: Dar um social network, pedir para identificar os nodes melhores para
 * Enemy release
   * Movement to new places often reduces disease burden
 * The British made ameican natives gifts of blankets from smallpox hospitals...
+
+---
+
+### Epidemiological studies Part 2
+
+* Esquema da priemira aula sobre os tipos de estudo
+* From slide 46 (unit 5)
+* Mais sobre Estudos Observacionais analítcos
+* 

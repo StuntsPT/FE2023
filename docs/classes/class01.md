@@ -126,7 +126,7 @@ Francisco Pina Martins
 
 ### Epidemiological Concepts I
 
-<div style="float:left; width:70%;" class="fragment">
+<div style="float:left; width:75%;" class="fragment">
 
 * **Determinants**
   * Causes that influence disease occurrence
@@ -139,7 +139,7 @@ Francisco Pina Martins
 
 </div>
 
-<div  style="float:right; width:30%;" class="fragment">
+<div  style="float:right; width:25%;" class="fragment">
 </br>
 <img src="C01_assets/risk.png" style="background:none; border:none; box-shadow:none;">
 </div>
@@ -166,17 +166,20 @@ Francisco Pina Martins
 <div style="float:left; width:70%;" class="fragment">
 
 * **Ecological fallacy**
-  * Assume that a given relationship found in grouped data is also true at individual level
+  * Assume that a given relationship found in group level is also true at individual level
 * **Biological fallacy**
-  * Assume that a given relationship found at individual level is also true in grouped data
+  * Assume that a given relationship found at individual level is also true in group level
 </br>
 </br>
 
 </div>
 
 <div  style="float:right; width:30%;" class="fragment">
-</br>
 <img src="C01_assets/fallacy.png" style="background:none; border:none; box-shadow:none;">
+</div>
+
+<div  style="float:right; width:30%;" class="fragment">
+<img src="C01_assets/skull.png" style="background:none; border:none; box-shadow:none;">
 </div>
 
 <div style="float:left; width:70%;" class="fragment">
@@ -188,9 +191,6 @@ Francisco Pina Martins
 
 </div>
 
-<div  style="float:right; width:30%;" class="fragment">
-<img src="C01_assets/skull.png" style="background:none; border:none; box-shadow:none;">
-</div>
 
 ---
 
@@ -214,7 +214,7 @@ Francisco Pina Martins
 ### Common frequency measurements
 
 * &shy;<!-- .element: class="fragment" -->**Incidence**
- * &shy;<!-- .element: class="fragment" -->Frequency at which new disease cases **arise** in a given time frame
+ * &shy;<!-- .element: class="fragment" -->Frequency at which new cases **arise** in a given time frame
 * &shy;<!-- .element: class="fragment" -->**Prevalence**
  * &shy;<!-- .element: class="fragment" -->Number of **active cases** in any moment in time
 * &shy;<!-- .element: class="fragment" -->**Mortality** and **survivability** can be considered **Incdence** variants
@@ -338,14 +338,6 @@ Francisco Pina Martins
 
 ---
 
-### Test your skills!
-
-Consider the following, recent [news article](https://www.bbc.com/news/world-europe-56357760).
-
-What kind of epidemiological study(eis) can be performed to assess whether or not the Oxford-AstraZeneca vaccine is associated with blood clots?
-
----
-
 ### The day that wasn't
 
 ---
@@ -357,9 +349,9 @@ What kind of epidemiological study(eis) can be performed to assess whether or no
  * Part of our everyday life 
 * Sometimes a disease can spread very rapidly through a population
  * **Epidemic!**
-  * Black Death
-  * Spanish flu
-  * COVID-19
+   * Black Death
+   * Spanish flu
+   * COVID-19
 
 ![Epidemic](C01_assets/epidemic.png)
 
@@ -437,7 +429,7 @@ What kind of epidemiological study(eis) can be performed to assess whether or no
  * Drops the "entierly susceptible population" assumption
  * Even harder to model than R<sub>0</sub>
 
-Insert new cases plot
+![New cases plot](C01_assets/new_cases.png)
 
 ---
 
