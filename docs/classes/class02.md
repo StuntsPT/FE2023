@@ -52,15 +52,15 @@ Francisco Pina Martins
 
 <div style="float:right; width:30%;" class="fragment">
 
-![person-year-plot](C02_assets/py-plot.png)
+<img src="C02_assets/py-plot.png">
+<!-- Not in markdown syntax to remove padding-->
 
 </div>
 
 <div style="float:left; width:100%;" class="fragment">
 
-* Where:
-  * Nc = Num. new cases in a given time period
-  * Rp = Time period during which a subject was considered at risk
+* *N<sub>c</sub>* = Num. new cases in a given time period
+* *R<sub>p</sub>* = Time period during which a subject was considered at risk
 
 </div>
 
@@ -70,13 +70,10 @@ Francisco Pina Martins
 # Total person-years in the study:
 # Time "stops counting" whenever a subject is no longer "at risk"
 TPY = 0.5 + 5 + 1.5 + 5 + 2.5  # 14.5
-
 # The **rate** is cases/TPY:
 IR = 3/TPY  # 0.207 cases/p-y (kind of meaningless)
-
 # But... If we multiply by 1000:
 # IR = 207 cases / 1000 p-y
-
 ```
 
 * Assuming a representative sample, we can expect 207 cases/1000 persons each year, or, how fast new cases arise
@@ -85,13 +82,13 @@ IR = 3/TPY  # 0.207 cases/p-y (kind of meaningless)
 
 ---
 
-### Cumulative Incidence (CI)
+### Cumulative Incidence (CuI)
 
 * &shy;<!-- .element: class="fragment" -->Subject's probability to become diseased:
-&shy;<!-- .element: class="fragment" -->`$$ CI = \frac{Nct}{Prt} $$`
+&shy;<!-- .element: class="fragment" -->`$$ CuI = \frac{Nct}{Prt} $$`
 * &shy;<!-- .element: class="fragment" -->Where:
- * &shy;<!-- .element: class="fragment" -->*Nct* = Number of cases in time period *t*
- * &shy;<!-- .element: class="fragment" -->*Prt* = Population at risk at start of time period *t*
+ * &shy;<!-- .element: class="fragment" -->*N<sub>ct</sub>* = Number of cases in time period *t*
+ * &shy;<!-- .element: class="fragment" -->*P<sub>rt</sub>* = Population at risk at start of time period *t*
 * &shy;<!-- .element: class="fragment" -->Effectively a risk estimate
 * &shy;<!-- .element: class="fragment" -->Assumes the entire population was accompanied for 100% of *t*
 
@@ -103,7 +100,7 @@ IR = 3/TPY  # 0.207 cases/p-y (kind of meaningless)
 
 ```R
 # Using data from the previous example
-CI = 3/5
+CuI = 3/5
 
 # Assuming a representative sample, we expect 3/5 individuals to develop this disease
 
@@ -116,8 +113,8 @@ CI = 3/5
 * &shy;<!-- .element: class="fragment" -->Subject probability of being diseased in any given moment
 &shy;<!-- .element: class="fragment" -->`$$ P_t = \frac{C_t}{N_t} $$`
 * &shy;<!-- .element: class="fragment" -->Where:
- * &shy;<!-- .element: class="fragment" -->*Ct* = Total number of cases at moment *t*
- * &shy;<!-- .element: class="fragment" -->*Nt* = Population at moment *t*
+ * &shy;<!-- .element: class="fragment" -->*C<sub>t</sub>* = Total number of cases at moment *t*
+ * &shy;<!-- .element: class="fragment" -->*N<sub>t</sub>* = Population at moment *t*
 * &shy;<!-- .element: class="fragment" -->Single observation measure
 * &shy;<!-- .element: class="fragment" -->Will vary a lot in time
 
@@ -141,9 +138,8 @@ Prev = 2/5
 
 * &shy;<!-- .element: class="fragment" -->An estimate of the probability of dying from the studied disease
 &shy;<!-- .element: class="fragment" -->`$$ Cf_r = \frac{N_D}{N_c} $$`
-* &shy;<!-- .element: class="fragment" -->Where:
- * &shy;<!-- .element: class="fragment" -->*ND* = Number of deaths from disease
- * &shy;<!-- .element: class="fragment" -->*NC* = Number of disease cases
+* &shy;<!-- .element: class="fragment" -->*N<sub>D</sub>* = Number of deaths from disease
+* &shy;<!-- .element: class="fragment" -->*N<sub>C</sub>* = Number of disease cases
 * &shy;<!-- .element: class="fragment" -->A measurement of disease's **risk**
 
 |||
@@ -154,10 +150,9 @@ Prev = 2/5
 # Of the 118,125,509 COVID-19 cases worldwide (09/03/2021)
 # 2,620,424 resulted in the patient's death
 
-CFr = 2620424/118125509  # 0.02218
+Cfr = 2620424/118125509  # 0.02218
 
 # Roughly 2.2% of COVID-19 patients end up dying
-
 ```
 
 ---
@@ -234,18 +229,17 @@ RR = Rexp/RNexp  # 6.108 - East Wing inmates are 6.1x more likely to be infected
 
 ### Risk Difference (RD)
 
-* Difference in risk between two groups
-* How much **excess risk** is due to exposure of interest
- * RD > 1: excess risk due to exposure
- * RD < 1: exposure of interest has a protective effect
+* &shy;<!-- .element: class="fragment" -->Difference in risk between two groups
+* &shy;<!-- .element: class="fragment" -->How much **excess risk** is due to exposure of interest
+ * &shy;<!-- .element: class="fragment" -->RD > 1: excess risk due to exposure
+ * &shy;<!-- .element: class="fragment" -->RD < 1: exposure of interest has a protective effect
 
-`$$ \frac{C_E}{N_E} - \frac{C_\bar{E}}{N_\bar{E}} $$`
+&shy;<!-- .element: class="fragment" -->`$$ RD = \frac{C_E}{N_E} - \frac{C_\bar{E}}{N_\bar{E}} $$`
 
-* Where:
- * C<sub>E</sub> = Cases in exposed group
- * N<sub>E</sub> = Total subjects in exposed group
- * C<sub>Ē</sub> = Cases in unexposed group
- * N<sub>Ē</sub> = Total subjects in unexposed group
+* &shy;<!-- .element: class="fragment" -->C<sub>E</sub> = Cases in exposed group
+* &shy;<!-- .element: class="fragment" -->N<sub>E</sub> = Total subjects in exposed group
+* &shy;<!-- .element: class="fragment" -->C<sub>Ē</sub> = Cases in unexposed group
+* &shy;<!-- .element: class="fragment" -->N<sub>Ē</sub> = Total subjects in unexposed group
 
 ---
 
@@ -502,10 +496,10 @@ cases = c(1018, 1072, 1092, 1115, 1184, 1171, 1228, 1128, 1057, 1020, 909, 899, 
 years = c(2006:2018)
 
 HIV = data.frame(years, cases)
+```
 
 </div>
 
-```
 
 |||
 
