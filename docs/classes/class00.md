@@ -34,12 +34,9 @@ Francisco Pina Martins
 
 ## Programa
 
-**3ª semana**
+**3ª e 4ª semana**
 
 * 30-03-2021 – Revisões
-
----
-
 * 09-04-2021 – **Avaliação**
 
 ---
@@ -68,7 +65,7 @@ Francisco Pina Martins
 
 ## Participação Geral
 
-* Participação nas aualas teóricas <!-- .element: class="fragment" data-fragment-index="1" -->
+* Participação nas aulas teóricas <!-- .element: class="fragment" data-fragment-index="1" -->
 * Participação na parte prática <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ---
