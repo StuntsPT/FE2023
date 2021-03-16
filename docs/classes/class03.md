@@ -502,6 +502,30 @@ oddsratio.wald(stroke_table, rev="b")
 
 ---
 
+### Rate Ratio CI
+
+* &shy;<!-- .element: class="fragment" -->Can be calculated when *person-time at risk* is known
+
+<div class="fragment">
+
+```R
+library(epitools)
+##Examples from Rothman 1998, p. 238 (straight from the docs)
+bc <- c(Unexposed = 15, Exposed = 41)
+pyears <- c(Unexposed = 19017, Exposed = 28010)
+dd <- matrix(c(41,15,28010,19017),2,2)
+dimnames(dd) <- list(Exposure=c("Yes","No"), Outcome=c("BC","PYears"))
+##midp
+rateratio(bc,pyears)
+rateratio(dd, rev = "r")
+rateratio(matrix(c(15, 41, 19017, 28010),2,2))
+rateratio(c(15, 41, 19017, 28010))
+```
+
+</div>
+
+---
+
 ### Before you go!
 
 Consider the following, recent [news article](https://www.bbc.com/news/world-europe-56357760).
