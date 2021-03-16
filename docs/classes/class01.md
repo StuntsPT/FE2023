@@ -437,6 +437,7 @@ Francisco Pina Martins
 
 * [COVID-SIM](http://covidsim.eu/)
 * [Nextstrain](https://nextstrain.org/ncov/global)
+* [VAX](http://vax.herokuapp.com/)
 
 ---
 
