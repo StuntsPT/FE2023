@@ -128,7 +128,7 @@ Francisco Pina Martins
 
 <div style="float:left; width:75%;" class="fragment">
 
-* **Determinants**
+* **Determinants** or **Exposure**
   * Causes that influence disease occurrence
 * **Risk-factor**
   * Any studied agent that can *potentially* influence disease occurrence
