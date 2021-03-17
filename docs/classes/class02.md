@@ -108,28 +108,6 @@ CuI = 3/5
 
 ---
 
-### Rate Ratio (RaR)
-
-* &shy;<!-- .element: class="fragment" -->When IR is computed, it is possible to compare the rates between *exposed* (*E*) and *unexposed* (*Ē*) subjects
-* &shy;<!-- .element: class="fragment" -->RaR = R<sub>*E*</sub>/R<sub>*Ē*</sub>
-
-<div class="fragment">
-
-|       | D   | ND  | Person-years at risk |
-|:---   |:---:|:---:|:---:                 |
-| E     | 60  | 140 | 175                  |
-| Ē     | 25  | 175 | 188                  |
-| Total | 85  | 315 | 363                  |
-
-</div>
-
-* &shy;<!-- .element: class="fragment" -->R<sub>exposed</sub> = 60/175 = 0.34
-* &shy;<!-- .element: class="fragment" -->R<sub>unexposed</sub> = 25/188 = 0.13
- * &shy;<!-- .element: class="fragment" -->RaR = 0.34/0.13 = 2.6
-* &shy;<!-- .element: class="fragment" -->"The outcome develops 2.6x faster in *E* subjects than in *Ē*"
-
----
-
 ### Prevalence
 
 * &shy;<!-- .element: class="fragment" -->Subject probability of being diseased in any given moment
