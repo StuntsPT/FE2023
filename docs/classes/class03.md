@@ -541,3 +541,4 @@ What kind of epidemiological study(eis) can be performed to assess whether or no
 * [Follow up in cohort studies](https://sphweb.bumc.bu.edu/otlt/MPH-Modules/EP/EP713_CohortStudies/EP713_CohortStudies4.html)
 * [Morbidity frequency measures](https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section2.html)
 * [Confidence intervals](https://www.nlm.nih.gov/nichsr/stats_tutorial/section2/mod2_confidence.html)
+* [Where do z-scores come from?](https://www.youtube.com/watch?v=sJyZ9vRhP7o)
