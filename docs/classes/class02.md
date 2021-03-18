@@ -237,8 +237,8 @@ RR = Rexp/RNexp  # 6.108 - East Wing inmates are 6.1x more likely to be infected
 
 * &shy;<!-- .element: class="fragment" -->Difference in risk between two groups
 * &shy;<!-- .element: class="fragment" -->How much **excess risk** is due to exposure of interest
- * &shy;<!-- .element: class="fragment" -->RD > 1: excess risk due to exposure
- * &shy;<!-- .element: class="fragment" -->RD < 1: exposure of interest has a protective effect
+ * &shy;<!-- .element: class="fragment" -->RD > 0: excess risk due to exposure
+ * &shy;<!-- .element: class="fragment" -->RD < 0: exposure of interest has a protective effect
 
 &shy;<!-- .element: class="fragment" -->`$$ RD = \frac{C_E}{N_E} - \frac{C_\bar{E}}{N_\bar{E}} $$`
 
