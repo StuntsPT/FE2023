@@ -438,8 +438,8 @@ legend(3.2, 130 , colnames(tub_table), fill=sequential_hcl(2))
 set.seed(1235813)
 
 # Draw 'random' values from a normal distribution
-Fz = rnorm(50, 1.60, 6)
-Mz = rnorm(50, 1.70, 9)
+Fz = rnorm(50, 160, 6)
+Mz = rnorm(50, 170, 9)
 
 # Tidy it up in a dataframe
 Zdata = data.frame(Fz, Mz)
