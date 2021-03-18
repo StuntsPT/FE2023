@@ -71,7 +71,6 @@ Francisco Pina Martins
 #### Prevalence studies
 
 * &shy;<!-- .element: class="fragment" -->Subjects **were existing outcome cases** during observation period
- * &shy;<!-- .element: class="fragment" -->Influenced by incidence rate, survival or migration
 * &shy;<!-- .element: class="fragment" -->Preferred if studying disease duration
 
 </div>
@@ -342,7 +341,7 @@ Francisco Pina Martins
  * &shy;<!-- .element: class="fragment" -->Time
  * &shy;<!-- .element: class="fragment" -->Money
 * &shy;<!-- .element: class="fragment" -->Can suffer losses (individuals drop out of study) which may cause bias
-* &shy;<!-- .element: class="fragment" -->Unaccounted differences between cohorts any introduce bias
+* &shy;<!-- .element: class="fragment" -->Unaccounted differences between cohorts may introduce bias
 
 </div>
 
