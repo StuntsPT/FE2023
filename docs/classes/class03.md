@@ -185,7 +185,7 @@ Francisco Pina Martins
 
 * &shy;<!-- .element: class="fragment" -->Can work with small sample
 * &shy;<!-- .element: class="fragment" -->No need to follow subjects over time
-* &shy;<!-- .element: class="fragment" -->Can estimate RR reasonably well
+* &shy;<!-- .element: class="fragment" -->OR is a reasonably good RR estimate
 * &shy;<!-- .element: class="fragment" -->Inexpensive
 * &shy;<!-- .element: class="fragment" -->Can study multiple risk factors simultaneously
 * &shy;<!-- .element: class="fragment" -->Can provide reasonable support for causation
