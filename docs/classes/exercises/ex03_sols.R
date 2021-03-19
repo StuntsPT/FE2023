@@ -83,12 +83,10 @@ new_phd_cases_vector = c(0, 0, 0, 200, 0, 0, 0, 0, 0, 0)
 new_unicorns_cases_vector = c(0, 0, 0, 90, 0, 0, 0, 0, 0, 0)
 semesters = 1:10
 
-barplot(new_phd_cases_vector, col=sequential_hcl(1), xlab="Semester",
-        ylab="New depression cases", ylim=c(0, max(new_phd_cases_vector)),
-        main="New depressions cases in academics per semester",
-        names.arg=semesters, las=T)
+depression_matrix = matrix(c(new_phd_cases_vector, new_unicorns_cases_vector), byrow=T, 2, 10)
 
-barplot(new_unicorns_cases_vector, col=sequential_hcl(1), xlab="Semester",
-        ylab="New depression cases", ylim=c(0, max(new_unicorns_cases_vector)),
+barplot(depression_matrix, col=sequential_hcl(2), xlab="Semester",
+        ylab="New depression cases", ylim=c(0, max(depression_matrix)),
         main="New depressions cases in academics per semester",
-        names.arg=semesters, las=T)
+        names.arg=semesters, las=T, beside=T)
+legend("topright", c("PhD students", "Unicorns"), fill=sequential_hcl(2))
