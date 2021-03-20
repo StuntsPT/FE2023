@@ -52,8 +52,8 @@ Insert picture here
 
 |                               | Cholera | No cholera | Total |
 |:---                           |:-------:|:----------:|:-----:|
-| Drank Broad St. water         | 60  [1] | 220   [2]  | 280   |
-| Did not drink Broad St. water | 40  [3] | 680   [4]  | 720   |
+| Within Broad St. range        | 60  [1] | 220   [2]  | 280   |
+| Outside Broad St. range       | 40  [3] | 680   [4]  | 720   |
 | Total:                        | 100     | 900        | 1000  |
 
 </div>
@@ -95,7 +95,7 @@ Insert picture here
 
 <div class="fragment" style="float:right;width:45%">
 
-* Prevalence Rate:
+* Prevalence Ratio:
 `$$ PR = \frac{(Q_1/T_E)}{(Q_3/T_Ē)}  $$`
 `$$ PR = \frac{(60/280)}{(40/720)} = 3.857 $$`
 
@@ -143,7 +143,88 @@ Insert picture here
 
 ---
 
+### Main characteristics
+
+* Work at a population level
+ * No individual data
+ * Both outcome and exposure
+* Used to associate outcome and exposure
+ * No causation can be inferred
+   * No information on which outcomes were exposed
+
+Insert picture here (Include ecological fallacy)
+
+|||
+
+### Ecological study examples
+
+* Is the ranking of cities by road traffic levels associated with the ranking of cities by mortality from pulmonary diseases, after adjusting for other factors?
+* Are a region's daily variations in mortality related to daily variations in nano-particle concentration?
+* What are the long-term time trends (decades long) for mortality from the cardiovascular diseases in each EU country?
+
+Insert picture here
+
+---
+
+### I thought you said these studies were interventional!
+
+* And they are - consider the following:
+ * Compare the prevalence of lung diseases in a region before and after laws on factory smoke filters are passed
+ * Compare "junk food" consumption before and after a large healthy eating habits campaign
+
+Insert picture of greasy food here
+
+---
+
+### Types of Ecological study design:
+
+* Can be classified according to 2 criteria:
+ 1. Descriptive vs analytic;
+ 2. Subjects grouping by place: (multiple-group study), by time (time-trend study), or place and time (mixed study)
+
+* Multi-group ecological studies
+ * Compare aggregate exposures and outcomes over the same time period in different communities
+* Time-trend ecological studies
+ * Compare variations in aggregate exposures and outcomes over time within the same community
+* Mixed ecological studies
+ * Investigate disease or risk factor differences between communities throughout time
+
+---
+
+### Pros and Cons of Ecological studies
+
+<div class="fragment" style="float:left;width:50%">
+
+* Aggregate data is easy to come by
+* Data is usually up-to-date
+* Inexpensive
+* Quick to perform
+* Very good to propose hypotheses
+
+</div>
+
+<div class="fragment" style="float:left;width:50%">
+
+* Cannot extrapolate to individual level
+* Aggregate data suffers from bias and confounding
+* Migration is an important bias factor in time-trend studies
+* No way to establish causation
+
+</div>
+
+---
+
+### Randomized Control Trials
+
+---
+
+
+
+---
+
 ### References
 
 * [A summary on cross-sectional studies](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC8.pdf)
 * [Cross sectional studies for the uninitiated](https://thebmj-frontend.bmj.com/about-bmj/resources-readers/publications/epidemiology-uninitiated/8-case-control-and-cross-sectional)
+* [A summary on ecological studies](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC9.pdf)
+* [Ecologic Studies in Epidemiology: Concepts, Principles, and Methods](https://www.annualreviews.org/doi/10.1146/annurev.pu.16.050195.000425?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub++0pubmed)
