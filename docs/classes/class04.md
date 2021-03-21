@@ -218,7 +218,125 @@ Insert picture of greasy food here
 
 ---
 
+### What are Randomized Control Trials (RCTs)?
 
+* Interventional studies
+* Two or more groups are **randomly** created
+ * Control group
+ * Treatment group(s)
+* Most direct evidence for causality
+
+|||
+
+![Randomized Control Trial study](C01_assets/RCT.png)
+
+---
+
+### Types of controls
+
+* *Placebo controlled*
+ * Treatment group(s) are provided with a treatment
+ * Control group is provided with a placebo (AKA - no treatment)
+* *Active controlled*
+ * Treatment group(s) are provided with a treatment
+ * Control group is provided with a "standard" treatment
+
+Insert picture of placebo
+
+---
+
+### Subject randomization
+
+* The goal is to make sure all groups have similar risk factors
+ * Larger samples result in better risk factor distribution
+* Randomizing strategies
+ * Full random
+   * Just toss a coin, or roll a die
+ * Stratified randomization
+   * First stratify subjects by a known risk factor, then randomize subjects from each strata into groups
+
+Insert picture of die
+
+|||
+
+### Randomization assessment
+
+* Include  five  to  10 variables
+ * Demographic data (age, gender, race, ...)
+ * Severity of illness measures
+ * Other variables known to be related to the primary  outcome
+* Significance tests (*t-tests*, Chi²) should not report more than the number of expected values above *alpha*
+ * Eg. 1 in 20 for *alpha* = 0.05
+
+Insert picture of significance
+
+---
+
+### Types of RCTs
+
+* Clinical trials
+ * Subjects are patients
+ * Assess efficacy of a new treatment
+* Community trials
+ * Subjects are entire communities
+ * Assess efficacy if a new policy
+ * Limited in what conclusions can be drawn
+ * Overlap with ecological studies
+
+Insert another picture here
+
+---
+
+### Blinding
+
+* A way to work-around the bias from subjects *knowing* they are being treated
+* Single-blind trials
+ * Subjects are unaware of their treatment group
+ * Controls for *post-rnadomization confounding bias*
+* Double-blind trials
+ * Subjects **and** investigators are unaware of the subjects' group
+ * Controls for *information bias* (get differential groups' details)
+* Triple-blind trials
+ * Subjects, investigators **and** independent statisticians are unaware of the subjects' treatment groups
+ * Also controls for *information bias* ("Look at this PCA pattern!")
+
+Insert picture of blind-folds
+
+---
+
+### Threats to RCTs
+
+* Compliance
+ * Subjects may be non-compliant
+ * Non-compliant subjects should **not** be removed!
+* Crossover
+ * Switching subjects between groups
+ * Carryover effects
+* Loss to follow up
+ * Subjects may drop out differentially
+ * Especially "dangerous" if correlated with outcome related factors
+
+---
+
+### Phases
+
+[Paper on phases](https://dx.doi.org/10.2147%2FCOPD.S244942)
+
+---
+
+### RCT data analysis
+
+---
+
+### What about survival?
+
+* To investigate associations between time to an event (Eg. death) and a set of variables, use "Cox Proportional-Hazards Model"
+ * It's outside this course's scope, but for future reference:
+* [Cox Proportional-Hazards Model - a guide in R](https://www.r-bloggers.com/2016/12/cox-proportional-hazards-model/)
+* [An alternative tutorial for CP-HM](https://argoshare.is.ed.ac.uk/healthyr_book/cox-proportional-hazards-regression.html)
+* [A third tutorial on CP-HM](https://stats.idre.ucla.edu/r/dae/mixed-effects-cox-regression/)
+
+![Cox Proportional-Hazards Model](C04_assets/cphm.png)
 
 ---
 
@@ -228,3 +346,5 @@ Insert picture of greasy food here
 * [Cross sectional studies for the uninitiated](https://thebmj-frontend.bmj.com/about-bmj/resources-readers/publications/epidemiology-uninitiated/8-case-control-and-cross-sectional)
 * [A summary on ecological studies](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC9.pdf)
 * [Ecologic Studies in Epidemiology: Concepts, Principles, and Methods](https://www.annualreviews.org/doi/10.1146/annurev.pu.16.050195.000425?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub++0pubmed)
+* [Randomized control trials - a summary](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC10.pdf)
+* [Analyses of Randomized Control trials](https://academic.oup.com/epirev/article/24/1/26/2754706)
