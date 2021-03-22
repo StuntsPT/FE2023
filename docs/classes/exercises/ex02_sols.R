@@ -48,7 +48,7 @@ text(p, new_cases + 10, labels=new_cases_short)
 umbridgitits = matrix(c(20, 10, 5, 15), byrow=T, 2, 2)
 
 # 2.2.2
-EOR = 20 / 5
+EOR = 20 / 10
 
 # 2.2.3 - The odds of having umbridgitis after being to Weasleys' Wizard Wheezes are 4:1 when compared with students who have not been to Weasleys' Wizard Wheezes.
 
