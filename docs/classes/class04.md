@@ -320,11 +320,133 @@ Insert picture of blind-folds
 
 ### Phases
 
-[Paper on phases](https://dx.doi.org/10.2147%2FCOPD.S244942)
+* RCTs can also be classified in *Phases*
+* Phase 1 trials (Not really an RCT)
+ * 20-80 *volunteers*
+ * Used to determine optimal dosing
+ * Document absorption, distribution, metabolism and excretion
+ * Identify short-term side-effects
+* Phase 2 trials
+ * 100-300 patients
+ * Preliminary efficacy
+ * Blinded
+ * Look for more side-effects
+
+|||
+
+### Phases Pt. 2
+
+* Phase 3 trials
+ * 1000-3000 patients
+ * *Gold standard* to establish safety and efficacy
+ * Blinded
+ * Long time periods
+* Phase 4 trials (Also, not really RCTs)
+ * Observational
+ * Total scale, after regulatory approval
+ * Long term risks and side-effects
+ * "Real world" efficacy
+
+[Would you like to know more?](https://dx.doi.org/10.2147%2FCOPD.S244942)
 
 ---
 
-### RCT data analysis
+### Pros and Cons
+
+<div class="fragment" style="width:55%; float:left">
+
+### Pros
+
+* Strongest evidence for causation of any epidemiological study design
+* Minimizes confounding effects
+* Clear temporal sequence - exposure clearly precedes outcome
+* Strong basis for statistical inference
+* Blinding as a way to minimize bias
+* Can measure multiple outcomes simultaneously
+
+</div>
+
+<div class="fragment" style="width:45%; float:Right">
+
+### Cons
+
+* Ethical constraints - it is not always ethical to manipulate exposure at random
+* Expensive and time consuming
+* Requires complex design and analysis
+* Generalisability - subjects in a RCT may be more compliant with treatment than general population
+
+---
+
+### RCT data analyses
+
+* RCTs will typically present 2x2 tables
+* Unlike previous studies, the goal is not to measure risk, but differences in proportions
+* ...You guessed it:
+ * Chi² independence test
+ * Fisher's exact test
+* Let's look at an hypothetical trial for a new drug, that should make patients recover from a disease more often than the current known treatment
+
+|||
+
+### Small (Phase 2) example:
+
+|           | Recovered | Diseased |
+|:---       |:---------:|:--------:|
+| Treatment | 32        | 10       |
+| Control   | 21        | 23       |
+
+
+```R
+phase_2 = matrix(c(32, 10, 21, 23), byrow=T, 2, 2)
+colnames(phase_2) = c("Recovered", "Diseased")
+rownames(phase_2) = c("Treatment", "Control")
+
+fisher.test(phase_2)
+
+```
+
+|||
+
+### Large (Phase 3) example:
+
+|           | Recovered | Diseased |
+|:---       |:---------:|:--------:|
+| Treatment | 641       | 206      |
+| Control   | 422       | 463      |
+
+
+```R
+phase_2 = matrix(c(641, 206, 422, 463), byrow=T, 2, 2)
+colnames(phase_2) = c("Recovered", "Diseased")
+rownames(phase_2) = c("Treatment", "Control")
+
+fisher.test(phase_2)
+chisq.test(phase_2)
+
+```
+
+---
+
+### Can we break this?
+
+* RCTs significance or CI will often hinge on a single or a few cases changing
+* How can we assess how close to not being significant a study is?
+* Meet the **Fragility index**:
+ * Proposed by [Walter 1991](https://www.sciencedirect.com/science/article/abs/pii/089543569190098T)
+ * ["The smallest number of subjects whose status needs to change, for a statistically significant outcome to lose its statistical significance"](https://www.psychiatrist.com/read-pdf/21994/)
+
+```R
+install.packages("fragility")
+library(fragility)
+
+my_frag = frag.study(e0=32, n0=42, e1=21, n1=44)
+# e0 - numeric value indicating event count in group 0
+# n0 - numeric value indicating sample size in group 0
+# e1 - numeric value indicating event count in group 1
+# n1 - numeric value indicating sample size in group 1
+
+print(my_frag)
+```
 
 ---
 
@@ -347,4 +469,7 @@ Insert picture of blind-folds
 * [A summary on ecological studies](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC9.pdf)
 * [Ecologic Studies in Epidemiology: Concepts, Principles, and Methods](https://www.annualreviews.org/doi/10.1146/annurev.pu.16.050195.000425?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub++0pubmed)
 * [Randomized control trials - a summary](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC10.pdf)
+* [Short notes on RCTs](https://www.healthknowledge.org.uk/e-learning/epidemiology/practitioners/introduction-study-design-is-rct)
 * [Analyses of Randomized Control trials](https://academic.oup.com/epirev/article/24/1/26/2754706)
+* [Paper on phases](https://dx.doi.org/10.2147%2FCOPD.S244942)
+* [Fragility index](https://www.psychiatrist.com/read-pdf/21994/)
