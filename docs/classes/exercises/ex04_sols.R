@@ -3,7 +3,7 @@
 
 # Exercise 02
 
-# 1: Only a) is wrong. Ther others are all true 
+# 1: Only a) is wrong. The others are all true 
 
 # 2: All answers are correct
 
