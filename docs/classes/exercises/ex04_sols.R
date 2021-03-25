@@ -39,4 +39,43 @@ soccer_fragility = frag.study(ivg_injuries, intervention_group, ctg_injuries, co
 
 print(soccer_fragility$FI)
 
+## Caries
+
+# a) According to the paper, the treatment is **not** effective i preventing caries, but it is effecting in reducing the damage extent
+# b)
+intervention = 549
+control = 547
+
+control_caries = 213
+intervention_caries = 187
+
+caries_table = matrix(c(intervention_caries, (intervention - intervention_caries), control_caries, (control - control_caries)), byrow=T, 2, 2)
+colnames(caries_table) = c("Caries", "Healthy")
+rownames(caries_table) = c("Varnish", "Control")
+
+oddsratio.wald(caries_table)
+
+# c) Perfect replication
+
+# d)
+caries_fragility = frag.study(intervention_caries, intervention, control_caries, control)
+
+print(caries_fragility$FI)
+
+## I dare you...
+
+# SD/SD:
+sd_table = matrix(c(27, 4440-27, 71, 4455-71), byrow=T, 2, 2)
+colnames(sd_table) = c("COVID-19", "Healthy")
+rownames(sd_table) = c("ChAdOx1", "Control")
+
+# LD/SD:
+ld_table = matrix(c(3, 1367-3, 30, 1374-30), byrow=T, 2, 2)
+colnames(ld_table) = c("COVID-19", "Healthy")
+rownames(ld_table) = c("ChAdOx1", "Control")
+
+# Original method:
+# https://academic.oup.com/aje/article/159/7/702/71883
+# There is no direct implementation in R, but this tutorial can roughly guide you:
+# http://rstudio-pubs-static.s3.amazonaws.com/5752_fc41dca85dd24539bc99868697de83d0.html
 
