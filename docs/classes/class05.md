@@ -78,7 +78,6 @@ Francisco Pina Martins
 
 * &shy;<!-- .element: class="fragment" -->Epidemiological studies try to associate *risk factor* to *outcome*
 * &shy;<!-- .element: class="fragment" -->Other factors that can also explain such association are called *confounders*
-* &shy;<!-- .element: class="fragment" -->A type of *bias*
 * &shy;<!-- .element: class="fragment" -->Can cause over or under estimate of a measure
 * &shy;<!-- .element: class="fragment" -->Are actually very common
 * &shy;<!-- .element: class="fragment" -->Can be adjusted for
