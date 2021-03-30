@@ -31,7 +31,7 @@ chisq.test(contingency_table)
 riskratio(contingency_table)
 
 # The table is inverted so that the same result is reported as in the paper.
-oddsratio.wald(contingency_table[,c(2,1)], rev="b")
+oddsratio.wald(contingency_table, rev="c")
 
 # These results are compatible with the paper's, but not exactly the same. This is likely do to the unreported number of cases lost to follow up.
 
