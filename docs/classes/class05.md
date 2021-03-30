@@ -300,7 +300,7 @@ chisq.test(independence_table)
  * &shy;<!-- .element: class="fragment" -->The measure of association using only subjects **affected** by the variable of interest (A)ffected
  * &shy;<!-- .element: class="fragment" -->The measure of association using only subjects **not affected** by the variable of interest (U)naffected
 * &shy;<!-- .element: class="fragment" -->EMM is likely if `A < C < U` or `A > C > U`
- * &shy;<!-- .element: class="fragment" -->There is no rule of thumb to decide how different `A, C and ` must be in order to identify EMM
+ * &shy;<!-- .element: class="fragment" -->There is no rule of thumb to decide how different `A, C and U` must be in order to identify EMM
 * &shy;<!-- .element: class="fragment" -->If there is no evidence of EMM, the crude measure can be tweaked
 
 ---
