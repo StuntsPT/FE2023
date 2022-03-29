@@ -1,14 +1,12 @@
 ### Class #1
 
-#### Fundamentos de Epidemiologia 2021
+#### Fundamentos de Epidemiologia 2022
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
 Francisco Pina Martins
 
 [@FPinaMartins](https://twitter.com/FPinaMartins)
-
-[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)
 
 ---
 
@@ -55,7 +53,7 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->John Snow: 1813-1858
 * &shy;<!-- .element: class="fragment" -->Cholera: Death rate > 50% without medical attention
 * &shy;<!-- .element: class="fragment" -->*Vibrio choleara*; passed via dirty water
-* &shy;<!-- .element: class="fragment" -->1830, 1840 and 1849 outbreaks
+* &shy;<!-- .element: class="fragment" -->1831-1832 and 1848-1849 outbreaks
 
 ---
 
@@ -65,11 +63,11 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->JS looked at water sources
   * &shy;<!-- .element: class="fragment" -->Southwark and Vauxhall (Thames)
   * &shy;<!-- .element: class="fragment" -->Lamberth (Upstream)
-  * &shy;<!-- .element: class="fragment" -->*Sw* and *Vx* were 14x more likely to die than *Lm*
+  * &shy;<!-- .element: class="fragment" -->*Sw & Vx* were almost 9x more likely to die than *Lm*
   * &shy;<!-- .element: class="fragment" -->It was waterborne!
 * &shy;<!-- .element: class="fragment" -->1849 - JS links cholera and digestive system (vomiting and diarrhea)
 
-<img src="C01_assets/dirty_thames.jpg" style="background:none; border:none; box-shadow:none;" class="fragment">
+<a href="https://dx.doi.org/10.1016%2FB978-0-12-804571-8.00017-2"><img src="C01_assets/cholera_table.png" style="background:none; border:none; box-shadow:none;" class="fragment"></a>
 
 ---
 
@@ -339,6 +337,8 @@ Francisco Pina Martins
 ---
 
 ### The day that wasn't
+
+![Umbrella Academy "The day that wasn't"](C01_assets/umbrella_wasnt.webp)
 
 ---
 
