@@ -76,11 +76,11 @@ goblin_plot(gob_rare)
 goblin_plot(gob_uncommon)
 
 # 1.2
-Rare_RR = 180/10000
-Uncommon_RR = 540/10000
+Rare_RR = (100/2000)/(80/8000)
+Uncommon_RR = (300/2000)/(240/8000)
 
 # 1.3
-Rare_OR = 180/9820
-Uncommon_OR = 540/9460
+Rare_OR = (100/1900)/(80/7920)
+Uncommon_OR = (300/1700)/(240/7760)
 
 # 1.4 - When the diseases is rarer, the OR approaches the RR
