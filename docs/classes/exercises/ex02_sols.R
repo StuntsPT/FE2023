@@ -2,10 +2,10 @@
 # 1.1 - A follow-up study
 
 # 1.2
-PM = 8 * 3.5 + 11 * 6.5 + 4 * 11.5
+PM = 8 * 3.5 + 11 * 6.5 + 4 * 11.5 + 477 * 12
 
 # 1.3
-IR = 23 / PM
+IR = 23 / PM  # 3.91 cases per 1000 person-months
 
 # 1.4 - 8 participants after 4 months, 11 after 7 months and 4 after 12 months
 
@@ -14,8 +14,8 @@ CuI = 23 / 500
 
 # 1.6
 # February - 0/500
-# June - 8/500
-# December - 23/500
+# July - 8/500
+# December - 19/500
 
 # 1.7
 study_months = 1:12
@@ -48,9 +48,9 @@ text(p, new_cases + 10, labels=new_cases_short)
 umbridgitits = matrix(c(20, 10, 5, 15), byrow=T, 2, 2)
 
 # 2.2.2
-EOR = 20 / 10
+EOR = (20*15) / (10*5)
 
-# 2.2.3 - The odds of having umbridgitis after being to Weasleys' Wizard Wheezes are 4:1 when compared with students who have not been to Weasleys' Wizard Wheezes.
+# 2.2.3 - The odds of having umbridgitis after being to Weasleys' Wizard Wheezes are 6:1 when compared with students who have not been to Weasleys' Wizard Wheezes.
 
 # Exercise 3
 library(colorspace)
