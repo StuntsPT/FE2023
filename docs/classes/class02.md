@@ -1,14 +1,12 @@
 ### Class #2
 
-#### Fundamentos de Epidemiologia 2021
+#### Fundamentos de Epidemiologia 2022
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
 Francisco Pina Martins
 
 [@FPinaMartins](https://twitter.com/FPinaMartins)
-
-[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)
 
 ---
 
@@ -45,7 +43,7 @@ Francisco Pina Martins
 <div style="float:left; width:70%;" class="fragment">
 
 * Num. new cases per risk period time unit
-`$$ IR = \frac{N_c}{\sum {R_p}[person-time]} $$`
+`$$ IR = \frac{N_c}{\sum {R_p}[person.time]} $$`
 
 </div>
 
@@ -153,6 +151,9 @@ Prev = 2/5
 Cfr = 2620424/118125509  # 0.02218
 
 # Roughly 2.2% of COVID-19 patients end up dying
+
+# Update for 29/03/2022
+Cfr2022 = 6155002/484742699  # 0.01270
 ```
 
 ---
@@ -313,7 +314,7 @@ fisher.test(Inmates)
 
 ### Rate Ratio (RaR)
 
-* &shy;<!-- .element: class="fragment" -->When IR is computed, it is possible to compare the rates between *exposed* (*E*) and *unexposed* (*Ē*) subjects
+* &shy;<!-- .element: class="fragment" -->When [IR](class02.html#/3/0/3) is computed, it is possible to compare the rates between *exposed* (*E*) and *unexposed* (*Ē*) subjects
 * &shy;<!-- .element: class="fragment" -->RaR = R<sub>*E*</sub>/R<sub>*Ē*</sub>
 
 <div class="fragment">
