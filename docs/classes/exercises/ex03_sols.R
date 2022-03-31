@@ -3,9 +3,9 @@ library(epitools)
 
 # Case-control studies
 # a) and b)
-gloves = read.csv("https://stuntspt.gitlab.io/FE2021/classes/exercises/gloves.csv", sep = ";")
+gloves = read.csv("https://stuntspt.gitlab.io/FE2022/classes/exercises/gloves.csv", sep = ";")
 
-# Remove the subject IDs and turn tem to a 2x2 table
+# Remove the subject IDs and turn them to a 2x2 table
 gloves_mtx = t(table(gloves[,-1]))
 
 # Pretty colours!
@@ -54,7 +54,7 @@ binom.approx(19, 182)
 binom.approx(12, 188)
 
 # d) and e)
-riskratio(c_t_s_matrix, rev="b")
+riskratio(c_t_s_matrix, rev="n")
 
 # f)
 prop.test(c(19, 12), c(182, 188))
@@ -76,7 +76,9 @@ phd_risk_matrix = as.data.frame(phd_matrix)
 phd_risk_matrix["Person-semester-risk"] = c(IR_Exp, IR_NExp)
 
 # e) and f)
-rateratio(c(90, 200, 1910, 1800), rev="b")
+rateratio(matrix(c(90, 200, 19505, 18900),2,2), rev="n")
+
+# Depression develops 2.29x CI 95%[1.79, 2.95] faster in PhD students than in "unicorns"
 
 # g)
 new_phd_cases_vector = c(0, 0, 0, 200, 0, 0, 0, 0, 0, 0)
