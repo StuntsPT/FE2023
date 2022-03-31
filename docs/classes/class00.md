@@ -24,9 +24,9 @@ Francisco Pina Martins
 
 **2ª e 3ª semanas**
 
-* 12-04-2022 – Journal Club; Confounding & Bias
+* 12-04-2022 – Confounding & Bias
 * Férias letivas 
-* 20-04-2022 – **Avaliação**
+* 20-04-2022 – **Avaliação**; Journal Club
 
 ---
 
