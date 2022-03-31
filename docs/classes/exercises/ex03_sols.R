@@ -66,17 +66,19 @@ colnames(phd_matrix) = c("Depressed", "Healthy")
 rownames(phd_matrix) = c("PhD candidate", "Unicorn")
 
 # b)
-IR_Exp = (200/(200 * 4.5 + 1800 * 10)) *  1000
+Exp_PS = (200 * 4.5 + 1800 * 10)
+IR_Exp = (200/Exp_PS) *  1000
 
 # c)
-IR_NExp = (90/(90 * 4.5 + 1910 * 10)) * 1000
+NExp_PS = (90 * 4.5 + 1910 * 10)
+IR_NExp = (90/NExp_PS) * 1000
 
 # d)
 phd_risk_matrix = as.data.frame(phd_matrix)
-phd_risk_matrix["Person-semester-risk"] = c(IR_Exp, IR_NExp)
+phd_risk_matrix["Person-semester-risk"] = c(Exp_PS, NExp_PS)
 
 # e) and f)
-rateratio(matrix(c(90, 200, 19505, 18900),2,2), rev="n")
+rateratio(matrix(c(90, 200, NExp_PS, Exp_PS),2,2), rev="n")
 
 # Depression develops 2.29x CI 95%[1.79, 2.95] faster in PhD students than in "unicorns"
 
