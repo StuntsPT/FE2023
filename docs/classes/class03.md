@@ -1,14 +1,12 @@
 ### Class #3
 
-#### Fundamentos de Epidemiologia 2021
+#### Fundamentos de Epidemiologia 2022
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
 Francisco Pina Martins
 
 [@FPinaMartins](https://twitter.com/FPinaMartins)
-
-[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)
 
 ---
 
@@ -355,7 +353,7 @@ Francisco Pina Martins
 
 * &shy;<!-- .element: class="fragment" -->**CIs** use the **sample** to estimate a range that likely contains **the population's true value**
  * &shy;<!-- .element: class="fragment" -->Eg. For a **95%** reliable study, a CI of **36-41** means:
-  * &shy;<!-- .element: class="fragment" -->If study is repeated, re-sampling the whole population, the results would be between **36 and 41**, **95%** of the time
+  * &shy;<!-- .element: class="fragment" -->If study is repeated, re-sampling the population until all individuals had been sampled, the results would be between **36 and 41**, **95%** of the time
 * &shy;<!-- .element: class="fragment" -->Is very influenced by sample size
 
 &shy;<!-- .element: class="fragment" -->![Confodence-interval](C03_assets/Confidence-interval.png)
@@ -371,10 +369,17 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->Where:
  * &shy;<!-- .element: class="fragment" -->*r* = risk estimate
  * &shy;<!-- .element: class="fragment" -->*n* = total number of individuals used to estimate *r*
+ * &shy;<!-- .element: class="fragment" -->*z* = an α dependant tabled value
 
 |||
 
 ### Example CI calculation
+
+<div class="fragment" data-fragment-index="4" style="float:right; width:25%;">
+
+![Deathstroke](C03_assets/deathstroke.webp)
+
+</div>
 
 |           |  Stroke | No Stroke | Total|
 | :----     |:----:|:------:|:----:|
@@ -382,9 +387,9 @@ Francisco Pina Martins
 | Non-Smoker| 15   |  1883  | 1898 |
 | Total     | 46   |  3269  | 3315 |
 
-* &shy;<!-- .element: class="fragment" -->Risk of Stroke death = 46/3315 = 0.013876
-* &shy;<!-- .element: class="fragment" -->Smoker's risk of Stroke death = 31/1417 = 0.021877
-* &shy;<!-- .element: class="fragment" -->Non-Smoker's risk of Stroke death = 15/1898 = 0.007903
+* &shy;<!-- .element: class="fragment" data-fragment-index="1"-->Risk of Stroke death = 46/3315 = 0.013876
+* &shy;<!-- .element: class="fragment" data-fragment-index="2"-->Smoker's risk of Stroke death = 31/1417 = 0.021877
+* &shy;<!-- .element: class="fragment" data-fragment-index="3"-->Non-Smoker's risk of Stroke death = 15/1898 = 0.007903
 
 |||
 
@@ -425,10 +430,18 @@ binom.approx(15, 1893)  # Non Smoker stroke risk
 ### Risk Ratio CI
 
 * &shy;<!-- .element: class="fragment" -->For RR we use `riskratio()` function from `epitools`
- * &shy;<!-- .element: class="fragment" -->Takes 2 mandatory arguments:
-  * &shy;<!-- .element: class="fragment" -->A data matrix
-  * &shy;<!-- .element: class="fragment" -->What data to consider (`rev`)
-  * &shy;<!-- .element: class="fragment" -->You may want to name your rows and columns for clarity
+ * &shy;<!-- .element: class="fragment" -->Takes a data matrix as mandatory argument
+  * &shy;<!-- .element: class="fragment" -->Must be formated like this (or use `rev`):
+
+<div class="fragment">
+
+```R
+                   disease=0   disease=1
+    exposed=0 (ref)    n00         n01
+    exposed=1          n10         n11	
+```
+
+</div>
 
 <div class="fragment">
 
@@ -437,7 +450,7 @@ library(epitools)
 
 stroke_table = matrix(c(31, 15, 1386, 1883), 2, 2)
 dimnames(stroke_table) = list("Behavior type"=c("Smoker", "Non-smoker"),
-                              "Outcome"=c("Yes", "No"))
+                              "Outcome"=c("Stroke", "No-stroke"))
 riskratio(stroke_table, rev="b")
 ```
 
@@ -447,7 +460,7 @@ riskratio(stroke_table, rev="b")
 
 ### Risk Difference CI
 
-* &shy;<!-- .element: class="fragment" -->DR = 0.021877 - 0.007903 = 0.013974
+* &shy;<!-- .element: class="fragment" -->RD = 0.021877 - 0.007903 = 0.013974
 * &shy;<!-- .element: class="fragment" -->Obtian CI using the formula:
 
 &shy;<!-- .element: class="fragment" -->`$$ \left( r_E - r_{NE} \pm z_{1-\alpha/2} \sqrt{\frac{r_E (1-r_E)}{n_1} + \frac{r_{NE}(1-r_{NE})}{n_2}} \right)  $$`
@@ -490,14 +503,14 @@ library(epitools)
 
 stroke_table = matrix(c(31, 15, 1386, 1883), 2, 2)
 dimnames(stroke_table) = list("Behavior type"=c("Smoker", "Non-smoker"),
-                              "Outcome"=c("Yes", "No"))
+                              "Outcome"=c("Stroke", "No-Stroke"))
 oddsratio.wald(stroke_table, rev="b")
 ```
 
 </div>
 
 * &shy;<!-- .element: class="fragment" -->OR CI = (1.510, 5.221)
-* &shy;<!-- .element: class="fragment" -->Smokers' odds of dying of a stroke are 2.81 higher than non-smokers'
+* &shy;<!-- .element: class="fragment" -->Smokers' odds of dying of a stroke are 2.81, 95% CI [1.51, 5.22] higher than non-smokers'
 
 ---
 
@@ -527,7 +540,7 @@ rateratio(c(15, 41, 19017, 28010))
 
 ### Before you go!
 
-Consider the following, recent [news article](https://www.bbc.com/news/world-europe-56357760).
+Consider the following, ~~recent~~ [news article](https://www.bbc.com/news/world-europe-56357760).
 
 What kind of epidemiological study(eis) can be performed to assess whether or not the Oxford-AstraZeneca vaccine is associated with blood clots?
 
