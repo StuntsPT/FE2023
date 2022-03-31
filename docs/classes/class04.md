@@ -1,14 +1,12 @@
 ### Class #4
 
-#### Fundamentos de Epidemiologia 2021
+#### Fundamentos de Epidemiologia 2022
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
 Francisco Pina Martins
 
 [@FPinaMartins](https://twitter.com/FPinaMartins)
-
-[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)
 
 ---
 
@@ -59,7 +57,7 @@ Francisco Pina Martins
 <div class="fragment" data-fragment-index="2" style="float:left;width:45%">
 
 * &shy;<!-- .element: class="fragment" -->Prevalence:
-`$$ P = C/N  $$` `$$ P_E = 60/280 = 0.2143 $$` `$$ P_Ē = 40/680 = 0.05882 $$`
+`$$ P = C/N  $$` `$$ P_E = 60/280 = 0.2143 $$` `$$ P_Ē = 40/720 = 0.0556 $$`
 
 </div>
 
