@@ -1,5 +1,6 @@
 # Exercise 01
 # a, b and d are correct. Cross-sectional studies cannot be used to measure incidence, due to the "snapshot" nature of this type of study.
+# To study c), you would need a follow-up study design.
 
 # Exercise 02
 
@@ -20,20 +21,21 @@ control_group = 287
 ivg_injuries = 6
 ctg_injuries = 18
 
-contingency_table = matrix(c((intervention_group - ivg_injuries), ivg_injuries, (control_group - ctg_injuries), ctg_injuries), byrow=T, 2, 2)
+contingency_table = matrix(c((control_group - ctg_injuries), ctg_injuries, (intervention_group - ivg_injuries), ivg_injuries), byrow=T, 2, 2)
 
 colnames(contingency_table) = c("Uninjured", "Injured")
-rownames(contingency_table) = c("Intervention", "Control")
+rownames(contingency_table) = c("Control", "Intervention")
 
 fisher.test(contingency_table)
 chisq.test(contingency_table)
 
 riskratio(contingency_table)
 
-# The table is inverted so that the same result is reported as in the paper.
-oddsratio.wald(contingency_table, rev="c")
+# Odds ratio
+oddsratio.small(contingency_table, rev="n")
 
-# These results are compatible with the paper's, but not exactly the same. This is likely do to the unreported number of cases lost to follow up.
+# These results are compatible with the paper's, but not exactly the same.
+# This is likely do to the SPSS Vs. R calculation differences.
 
 soccer_fragility = frag.study(ivg_injuries, intervention_group, ctg_injuries, control_group)
 
@@ -41,7 +43,7 @@ print(soccer_fragility$FI)
 
 ## Caries
 
-# a) According to the paper, the treatment is **not** effective i preventing caries, but it is effecting in reducing the damage extent
+# a) According to the paper, the treatment is **not** effective in preventing caries, but it is effecting in reducing the damage extent
 # b)
 intervention = 549
 control = 547
@@ -49,9 +51,9 @@ control = 547
 control_caries = 213
 intervention_caries = 187
 
-caries_table = matrix(c(intervention_caries, (intervention - intervention_caries), control_caries, (control - control_caries)), byrow=T, 2, 2)
-colnames(caries_table) = c("Caries", "Healthy")
-rownames(caries_table) = c("Varnish", "Control")
+caries_table = matrix(c((control - control_caries), control_caries, (intervention - intervention_caries), intervention_caries), byrow=T, 2, 2)
+colnames(caries_table) = c("Healthy", "Caries")
+rownames(caries_table) = c("Control", "Varnish")
 
 oddsratio.wald(caries_table)
 
