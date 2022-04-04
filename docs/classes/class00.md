@@ -6,7 +6,7 @@
 
 Francisco Pina Martins
 
-[@FPinaMartins](https://twitter.com/FPinaMartins) (Twitter)
+  [@FPinaMartins](https://twitter.com/FPinaMartins)
 
 ---
 
