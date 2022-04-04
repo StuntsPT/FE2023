@@ -60,12 +60,12 @@ Francisco Pina Martins
 ### Outbreaks. Outbreaks everywhere
 
 * &shy;<!-- .element: class="fragment" -->Cause was unknown (*Miasma theory*)
+* &shy;<!-- .element: class="fragment" -->1849 - JS links cholera and digestive system (vomiting and diarrhea)
 * &shy;<!-- .element: class="fragment" -->JS looked at water sources
   * &shy;<!-- .element: class="fragment" -->Southwark and Vauxhall (Thames)
   * &shy;<!-- .element: class="fragment" -->Lamberth (Upstream)
   * &shy;<!-- .element: class="fragment" -->*Sw & Vx* were almost 9x more likely to die than *Lm*
   * &shy;<!-- .element: class="fragment" -->It was waterborne!
-* &shy;<!-- .element: class="fragment" -->1849 - JS links cholera and digestive system (vomiting and diarrhea)
 
 <a href="https://dx.doi.org/10.1016%2FB978-0-12-804571-8.00017-2"><img src="C01_assets/cholera_table.png" style="background:none; border:none; box-shadow:none;" class="fragment"></a>
 
