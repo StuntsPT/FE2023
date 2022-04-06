@@ -48,7 +48,7 @@ barplot(c_t_s_matrix,
 legend("topleft", c("Daily pipettes", "Pipettes infrequently"), fill=sequential_hcl(2))
 
 # b)
-binom.approx(19, 182)
+binom.approx(19, 181)
 
 # c)
 binom.approx(12, 188)
