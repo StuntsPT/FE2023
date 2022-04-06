@@ -57,7 +57,7 @@ binom.approx(12, 188)
 riskratio(c_t_s_matrix, rev="n")
 
 # f)
-prop.test(c(19, 12), c(182, 188))
+prop.test(c(19, 12), c(181, 188))
 
 # Exercise 4
 # a)
