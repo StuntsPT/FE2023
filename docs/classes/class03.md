@@ -69,7 +69,7 @@ Francisco Pina Martins
 #### Prevalence studies
 
 * &shy;<!-- .element: class="fragment" -->Subjects **were existing outcome cases** during observation period
-* &shy;<!-- .element: class="fragment" -->Preferred if studying disease duration
+* &shy;<!-- .element: class="fragment" -->Preferred if studying what affects disease duration
 
 </div>
 
@@ -255,7 +255,7 @@ Francisco Pina Martins
  * &shy;<!-- .element: class="fragment" -->Education
  * &shy;<!-- .element: class="fragment" -->Age
  * &shy;<!-- .element: class="fragment" -->Agent exposure
-  * &shy;<!-- .element: class="fragment" -->Can be known at baseline (Eg. Coffee drinkers Vs. Non drinkers)
+  * &shy;<!-- .element: class="fragment" -->Must be known at baseline (Eg. Coffee drinkers Vs. Non drinkers)
   * &shy;<!-- .element: class="fragment" -->Can be divided in multiple categories (Eg. How many coffee cups consumed per day)
 * &shy;<!-- .element: class="fragment" -->Determine follow-up period
 
