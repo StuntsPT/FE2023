@@ -299,7 +299,7 @@ Francisco Pina Martins
  * &shy;<!-- .element: class="fragment" -->Assess efficacy of a new treatment
 * &shy;<!-- .element: class="fragment" -->Community trials
  * &shy;<!-- .element: class="fragment" -->Subjects are entire communities
- * &shy;<!-- .element: class="fragment" -->Assess efficacy if a new policy
+ * &shy;<!-- .element: class="fragment" -->Assess new policy efficacy
  * &shy;<!-- .element: class="fragment" -->Limited in what conclusions can be drawn
  * &shy;<!-- .element: class="fragment" -->Overlap with ecological studies
 
@@ -312,7 +312,7 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->Work-around to bias from subjects *knowing* they are being treated
 * &shy;<!-- .element: class="fragment" -->Single-blind trials
  * &shy;<!-- .element: class="fragment" -->Subjects are unaware of their treatment group
- * &shy;<!-- .element: class="fragment" -->Controls for *post-rnadomization confounding bias*
+ * &shy;<!-- .element: class="fragment" -->Controls for *post-randomization confounding bias*
 * &shy;<!-- .element: class="fragment" -->Double-blind trials
  * &shy;<!-- .element: class="fragment" -->Subjects **and** investigators are unaware of the subjects' group
  * &shy;<!-- .element: class="fragment" -->Controls for *information bias* (get differential groups' details)
