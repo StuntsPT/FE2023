@@ -35,7 +35,7 @@ oddsratio.wald(gloves_mtx, rev="r")
 # 3.
 #a)
 library(colorspace)
-c_t_s_matrix = matrix(c(19, 182, 12, 188), byrow=T, 2, 2)
+c_t_s_matrix = matrix(c(19, 181, 12, 188), byrow=T, 2, 2)
 colnames(c_t_s_matrix) = c("CTS", "No CTS")
 rownames(c_t_s_matrix) = c("Daily pipettes", "Pipettes infrequently")
 
@@ -54,7 +54,7 @@ binom.approx(19, 181)
 binom.approx(12, 188)
 
 # d) and e)
-riskratio(c_t_s_matrix, rev="n")
+riskratio(c_t_s_matrix, rev="b")
 
 # f)
 prop.test(c(19, 12), c(181, 188))
