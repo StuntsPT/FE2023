@@ -78,7 +78,7 @@ phd_risk_matrix = as.data.frame(phd_matrix)
 phd_risk_matrix["Person-semester-risk"] = c(Exp_PS, NExp_PS)
 
 # e) and f)
-rateratio(matrix(c(90, 200, NExp_PS, Exp_PS),2,2), rev="n")
+rateratio(matrix(c(90, 200, NExp_PS, Exp_PS),2,2), rev="b")
 
 # Depression develops 2.29x CI 95%[1.79, 2.95] faster in PhD students than in "unicorns"
 
