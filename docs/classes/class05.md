@@ -1,14 +1,10 @@
 ### Class #5
 
-#### Fundamentos de Epidemiologia 2021
+#### Fundamentos de Epidemiologia 2022
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
 Francisco Pina Martins
-
-[@FPinaMartins](https://twitter.com/FPinaMartins)
-
-[@FPinaMartins@scholar.social](https://scholar.social/@FPinaMartins) (Fediverse)
 
 ---
 
@@ -341,7 +337,7 @@ print(stratified_table)
 # Finally, claculate our adjusted values
 adj_values = epi.2by2(dat = stratified_table, method = "cohort.count", 
                       conf.level = 0.95, units = 100, outcome = "as.columns")
-		      print(adj_values)
+print(adj_values)
 ```
 
 * &shy;<!-- .element: class="fragment" -->Differences > 10% between crude and adjusted values suggest confounding
@@ -378,7 +374,7 @@ adj_values = epi.2by2(dat = stratified_table, method = "cohort.count",
 ### Logistic regression example
 
 ```R
-gloves2 = read.csv("https://stuntspt.gitlab.io/FE2021/classes/C05_assets/gloves_plus.csv", sep = ";")[,-1]
+gloves2 = read.csv("C05_assets/gloves_plus.csv", sep = ";")[,-1]
 
 # Previous way
 library(epitools)
