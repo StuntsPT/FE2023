@@ -374,7 +374,7 @@ print(adj_values)
 ### Logistic regression example
 
 ```R
-gloves2 = read.csv("C05_assets/gloves_plus.csv", sep = ";")[,-1]
+gloves2 = read.csv("https://stuntspt.github.io/FE2022/classes/C05_assets/gloves_plus.csv", sep = ";")[,-1]
 
 # Previous way
 library(epitools)
