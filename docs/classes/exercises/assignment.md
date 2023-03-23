@@ -1,43 +1,41 @@
 # Trabalho final de Fundamentos de Epidemiologia
 
-For this assignment you will have to present a report. Below you will find the necessary instructions.
+The task is to choose a specific disease, search the literature for epidemiological studies on it, and present a report on the selected studies. The report should include a general introduction to the disease, a methodology section that summarizes the selected studies, a results section that describes each study's methodology and compares their results, and a discussion section that analyzes the compatibility of the results. Details below.
 
 
-## Choose a disease - any disease. ("General introduction")
+## General Introduction
 
-* Search the literature for studies on a specific disease
-* Describe it in the report (what it is, who it affects, symptoms, known treatments, etc...)
-* Report your own work's objectives to finish off this section
-
-
-## Find epidemiological studies on this disease (This sort of works like a "Methodology" section)
-
-* One paper for at least 4 of the 5 types of study we approached
-* Make sure the studies are at least somewhat comparable (Eg. don't try to compare a cohort study performed in Peru, with a Case-Control study performed in Germany
- * The Randomized Control Trial **can** be an exception to this rule
-* Briefly present each paper, like a *micro*, or even *nano* abstract
+- Choose a disease and search for literature on it.
+- Describe the disease in detail in the report. This should include what the disease is, who it affects, the symptoms, known treatments, etc.
+- Report on the objectives of your own work.
 
 
-## Briefly describe each of the selected studies, focus on the methodology (This will be the "Results" section)
+## Methodology
 
-* Compare the different studies' results
-* Try to replicate the performed analyses
- * If you can't perform the same type of analyses, replace them with an adequate alternative
-* Compare the original results with your own
- * Explain any methodological differences
-* Include any code you use as an "Appendix" (alternatively bundle your R scripts with the report) 
+- Find at least one paper for four of the five types of epidemiological studies covered in class.
+- Ensure that the studies are somewhat comparable. For example, do not try to compare a cohort study performed in Peru with a case-control study performed in Germany. Note that a randomized control trial can be an exception to this rule.
+- Briefly present each paper as a micro or even nano abstract.
 
 
-## Finish with a results discussion
+## Results
 
-* How compatible are the results from multiple studies?
-* Were they possible to replicate?
- * Are your results compatible with the original studies'?
-* How are these studies connected?
-* Finish with your opinion on the matter
+- Briefly describe each of the selected studies, focusing on their methodology.
+- Compare the results of the different studies.
+- Attempt to replicate the performed analyses. If you cannot perform the same type of analyses, replace them with an adequate alternative.
+- Compare the original results with your own and explain any methodological differences.
+- Include any code used as an appendix or, even better, bundle your R scripts with the report.
 
 
-## List of papers on lung cancer studies (as an example):
+## Discussion
+
+- Discuss how compatible the results from multiple studies are.
+- Were they possible to replicate?
+- Analyze how these studies are connected.
+- Are your results compatible with the original studies'?
+- Conclude with your opinion on the matter.
+
+
+## Example Disease: Lung Cancer
 
 * [Case-control study](https://bmccancer.biomedcentral.com/articles/10.1186/1471-2407-14-860)
 * [Cohort study](https://doi.org/10.1136/bmj.312.7041.1259)
