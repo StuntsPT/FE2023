@@ -1,6 +1,6 @@
 ### Class #0
 
-#### Fundamentos de Epidemiologia 2022
+#### Fundamentos de Epidemiologia 2023
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
@@ -14,9 +14,9 @@ Francisco Pina Martins
 
 **1ª semana**
 
-* 05-04-2022 – Intro to epidemiology (History & concepts); Epidemiological measurements; Plotting refreshment
-* 06-04-2022 – In depth: Case-control and follow up studies; Confidence intervals
-* 07-04-2022 – In depth: Cross sectional, Ecological & Randomized control trial studies
+* 28-03-2023 – Intro to epidemiology (History & concepts); Epidemiological measurements; Plotting refreshment
+* 29-03-2023 – In depth: Case-control and follow up studies; Confidence intervals
+* 30-03-2023 – In depth: Cross sectional, Ecological & Randomized control trial studies
 
 |||
 
@@ -24,9 +24,9 @@ Francisco Pina Martins
 
 **2ª e 3ª semanas**
 
-* 12-04-2022 – Confounding & Bias
-* Férias letivas 
-* 20-04-2022 – **Avaliação**; Journal Club
+* 04-04-2023 – Confounding & Bias
+* 05-04-2023 - Journal Club 
+* 13-04-2023 – **Avaliação**
 
 ---
 
@@ -41,7 +41,7 @@ Francisco Pina Martins
 ## Trabalho Prático
 
 * Formato de relatório <!-- .element: class="fragment" data-fragment-index="1" -->
-* Prazo de entrega: 20 de Abril de 2022 <!-- .element: class="fragment" data-fragment-index="2" -->
+* Prazo de entrega: 13 de Abril de 2023 <!-- .element: class="fragment" data-fragment-index="2" -->
 * Em grupo <!-- .element: class="fragment" data-fragment-index="3" -->
 
 |||
@@ -61,5 +61,5 @@ Francisco Pina Martins
 
 ## Definição de grupos
 
-* 6 grupos de 4 elementos <!-- .element: class="fragment" data-fragment-index="1" -->
- * +1 de 3 elementos <!-- .element: class="fragment" data-fragment-index="1" -->
+* 3 grupos de 4 elementos <!-- .element: class="fragment" data-fragment-index="1" -->
+ * +2 de 3 elementos <!-- .element: class="fragment" data-fragment-index="1" -->
