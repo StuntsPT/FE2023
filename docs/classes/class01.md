@@ -1,6 +1,6 @@
 ### Class #1
 
-#### Fundamentos de Epidemiologia 2022
+#### Fundamentos de Epidemiologia 2023
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
@@ -167,6 +167,7 @@ Francisco Pina Martins
   * Assume that a given relationship found in group level is also true at individual level
 * **Biological fallacy**
   * Assume that a given relationship found at individual level is also true in group level
+
 </br>
 </br>
 

@@ -1,6 +1,6 @@
 ### Class #2
 
-#### Fundamentos de Epidemiologia 2022
+#### Fundamentos de Epidemiologia 2023
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
@@ -154,6 +154,9 @@ Cfr = 2620424/118125509  # 0.02218
 
 # Update for 29/03/2022
 Cfr2022 = 6155002/484742699  # 0.01270
+
+# Update for 24/03/2023
+Cfr2023 = 6824601/683101529  # 0.00999 
 ```
 
 ---

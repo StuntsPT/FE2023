@@ -1,6 +1,6 @@
 ### Class #5
 
-#### Fundamentos de Epidemiologia 2022
+#### Fundamentos de Epidemiologia 2023
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
@@ -374,7 +374,7 @@ print(adj_values)
 ### Logistic regression example
 
 ```R
-gloves2 = read.csv("https://stuntspt.github.io/FE2022/classes/C05_assets/gloves_plus.csv", sep = ";")[,-1]
+gloves2 = read.csv("https://stuntspt.github.io/FE2023/classes/C05_assets/gloves_plus.csv", sep = ";")[,-1]
 
 # Previous way
 library(epitools)

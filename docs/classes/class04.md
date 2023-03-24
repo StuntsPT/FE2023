@@ -1,6 +1,6 @@
 ### Class #4
 
-#### Fundamentos de Epidemiologia 2022
+#### Fundamentos de Epidemiologia 2023
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
