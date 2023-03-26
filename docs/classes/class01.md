@@ -275,7 +275,7 @@ Francisco Pina Martins
  * &shy;<!-- .element: class="fragment" -->**Prospective/follow up** 
    * &shy;<!-- .element: class="fragment" -->Exposed Vs. unexposed samples
    * &shy;<!-- .element: class="fragment" -->Focused on **risk factor effects**
- * &shy;<!-- .element: class="fragment" -->**Retrospective/case-control** (diseased vs. healthy samples)
+ * &shy;<!-- .element: class="fragment" -->**Retrospective/case-control**
    * &shy;<!-- .element: class="fragment" -->Diseased Vs. Healthy samples
    * &shy;<!-- .element: class="fragment" -->Focused on **disease causes**
 
