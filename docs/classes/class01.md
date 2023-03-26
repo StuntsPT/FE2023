@@ -438,7 +438,9 @@ Francisco Pina Martins
 
 * [COVID-SIM](http://covidsim.eu/)
 * [Nextstrain](https://nextstrain.org/ncov/global)
-* [VAX](http://vax.herokuapp.com/)
+* [Why R0 is hard](https://wwwnc.cdc.gov/eid/article/25/1/17-1901_article)
+* [The pandemic's misunderstood metric](https://www.nature.com/articles/d41586-020-02009-w)
+* [Calculating a pandemic's variables](https://iris.paho.org/bitstream/handle/10665.2/52405/PAHOIMSPHECOVID-19200031_eng.pdf)
 
 ---
 
@@ -449,6 +451,3 @@ Francisco Pina Martins
 * [The story of John Snow](https://sphweb.bumc.bu.edu/otlt/mph-modules/ph/publichealthhistory/publichealthhistory6.html)
 * [Types of epidemiological studies](https://link.springer.com/protocol/10.1007%2F978-1-60327-416-6_3)
 * [Randomized clinical trials types](https://doi.org/10.11613/BM.2014.022)
-* [Why R0 is hard](https://wwwnc.cdc.gov/eid/article/25/1/17-1901_article)
-* [The pandemic's misunderstood metric](https://www.nature.com/articles/d41586-020-02009-w)
-* [Calculating a pandemic's variables](https://iris.paho.org/bitstream/handle/10665.2/52405/PAHOIMSPHECOVID-19200031_eng.pdf)
