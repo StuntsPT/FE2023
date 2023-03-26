@@ -356,7 +356,7 @@ Francisco Pina Martins
 
 ![Epidemic](C01_assets/epidemic.png)
 
----
+|||
 
 ### Infectious diseases II
 
