@@ -83,7 +83,7 @@ IR = 3/TPY  # 0.207 cases/p-y (kind of meaningless)
 ### Cumulative Incidence (CuI)
 
 * &shy;<!-- .element: class="fragment" -->Subject's probability to become diseased:
-&shy;<!-- .element: class="fragment" -->`$$ CuI = \frac{Nct}{Prt} $$`
+&shy;<!-- .element: class="fragment" -->`$$ CuI = \frac{N_{ct}}{P_{rt}} $$`
 * &shy;<!-- .element: class="fragment" -->Where:
  * &shy;<!-- .element: class="fragment" -->*N<sub>ct</sub>* = Number of cases in time period *t*
  * &shy;<!-- .element: class="fragment" -->*P<sub>rt</sub>* = Population at risk at start of time period *t*
