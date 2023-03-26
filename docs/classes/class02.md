@@ -101,6 +101,7 @@ IR = 3/TPY  # 0.207 cases/p-y (kind of meaningless)
 CuI = 3/5
 
 # Assuming a representative sample, we expect 3/5 individuals to develop this disease
+# during the period *t* (5 years)
 
 ```
 
