@@ -14,9 +14,9 @@ Francisco Pina Martins
 
 **1ª semana**
 
-* 28-03-2023 – Intro to epidemiology (History & concepts); Epidemiological measurements; Plotting refreshment
-* 29-03-2023 – In depth: Case-control and follow up studies; Confidence intervals
-* 30-03-2023 – In depth: Cross sectional, Ecological & Randomized control trial studies
+* 28-03-2023 – Intro to epidemiology (History & concepts)
+* 28-03-2023 – Epidemiological measurements; Plotting refreshment
+* 30-03-2023 – In depth: Case-control and follow up studies; Confidence intervals
 
 |||
 
@@ -24,9 +24,9 @@ Francisco Pina Martins
 
 **2ª e 3ª semanas**
 
-* 04-04-2023 – Confounding & Bias
-* 05-04-2023 - Journal Club 
-* 13-04-2023 – **Avaliação**
+* 04-04-2023 – In depth: Cross sectional, Ecological & Randomized control trial studies
+* 05-04-2023 – Confounding & Bias
+* 13-04-2023 - Journal Club 
 
 ---
 
