@@ -125,9 +125,9 @@ CuI = 3/5
 
 ```R
 # Data from previous example
-# The prevalence by end of year 2
+# The prevalence by end of year 1
 
-Prev = 3/5
+Prev = 2/5
 
 ```
 
