@@ -50,7 +50,7 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->Controls are representative of **a sample** of the population-at-risk
  * &shy;<!-- .element: class="fragment" -->Risk measure denominator (population-at-risk) is unknown
 * &shy;<!-- .element: class="fragment" -->Number of cases and controls are set during design phase
- * &shy;<!-- .element: class="fragment" -->Ratio of controls to cases is not biologically meaningful
+ * &shy;<!-- .element: class="fragment" style="color:#e7ad52" -->Ratio of controls to cases is not biologically meaningful
 
 ---
 
@@ -161,15 +161,15 @@ Francisco Pina Martins
 
 ### Sourcing controls
 
-1. &shy;<!-- .element: class="fragment" -->Random sampling from census block groups
-2. &shy;<!-- .element: class="fragment" -->Case's close contacts
- * &shy;<!-- .element: class="fragment" -->Unless shared exposure of interest
-3. &shy;<!-- .element: class="fragment" -->Hospital controls
- * &shy;<!-- .element: class="fragment" -->May not be from same population
- * &shy;<!-- .element: class="fragment" -->May not be representative of exposure
- * &shy;<!-- .element: class="fragment" -->Other diseases may cause confounding
-4. &shy;<!-- .element: class="fragment" -->Controls with other diseases
- * &shy;<!-- .element: class="fragment" -->Must be sure to exclude possible related diseases
+* &shy;<!-- .element: class="fragment" -->Random sampling from census block groups
+* &shy;<!-- .element: class="fragment" -->Case's close contacts
+  * &shy;<!-- .element: class="fragment" -->Unless shared exposure of interest
+* &shy;<!-- .element: class="fragment" -->Hospital controls
+  * &shy;<!-- .element: class="fragment" -->May not be from same population
+  * &shy;<!-- .element: class="fragment" -->May not be representative of exposure
+  * &shy;<!-- .element: class="fragment" -->Other diseases may cause confounding
+* &shy;<!-- .element: class="fragment" -->Controls with other diseases
+  * &shy;<!-- .element: class="fragment" -->Must be sure to exclude possible related diseases
 
 </div>
 
@@ -228,19 +228,19 @@ Francisco Pina Martins
 
 **Assert if chocolate consumption protects from common cold**
 
-* &shy;<!-- .element: class="fragment" -->Exposure - eating chocolate
-* &shy;<!-- .element: class="fragment" -->Outcome - catching a cold
+* &shy;<!-- .element: class="fragment" data-fragment-index="1"-->Exposure - eating chocolate
+* &shy;<!-- .element: class="fragment" data-fragment-index="3"-->Outcome - catching a cold
 
 </br>
 </br>
 
-<div class="fragment" style="float:left;width=50%;">
+<div class="fragment" data-fragment-index="2" style="float:left;width=50%;">
 
 ![Chocolate](C03_assets/Chocolate.png)
 
 </div>
 
-<div class="fragment" style="float:right;width=50%;">
+<div class="fragment" data-fragment-index="4" style="float:right;width=50%;">
 
 ![Chocolate](C03_assets/sick.png)
 
@@ -336,8 +336,8 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->Large samples required
  * &shy;<!-- .element: class="fragment" -->*Especially* on rare outcomes
 * &shy;<!-- .element: class="fragment" -->Expensive
- * &shy;<!-- .element: class="fragment" -->Time
  * &shy;<!-- .element: class="fragment" -->Money
+ * &shy;<!-- .element: class="fragment" -->Time
 * &shy;<!-- .element: class="fragment" -->Can suffer losses (individuals drop out of study) which may cause bias
 * &shy;<!-- .element: class="fragment" -->Unaccounted differences between cohorts may introduce bias
 
@@ -364,7 +364,7 @@ Francisco Pina Martins
 
 * &shy;<!-- .element: class="fragment" -->One way to estimate the CI for risk is this:
 
-&shy;<!-- .element: class="fragment" -->`$$ \left( r-z_{1-\alpha/2} \sqrt{\frac{r(1-r)}{n}}, r + z_{1-\alpha/2} \sqrt{\frac{r(1-r)}{n}} \right) $$`
+&shy;<!-- .element: class="fragment" -->`$$ \left( r-z_{(1-\alpha/2)} \sqrt{\frac{r(1-r)}{n}}, r + z_{(1-\alpha/2)} \sqrt{\frac{r(1-r)}{n}} \right) $$`
 
 * &shy;<!-- .element: class="fragment" -->Where:
  * &shy;<!-- .element: class="fragment" -->*r* = risk estimate
@@ -375,11 +375,16 @@ Francisco Pina Martins
 
 ### Example CI calculation
 
-<div class="fragment" data-fragment-index="4" style="float:right; width:25%;">
+* [In 1985, 3315 *Electricity Generating Authority of Thailand* (EGAT) workers](https://doi.org/10.1093/ije/dyg105) were surveyed for their smoker status. After 12 years, individual strokes were logged.
+
+<div class="fragment" data-fragment-index="5" style="float:right; width:25%;">
 
 ![Deathstroke](C03_assets/deathstroke.webp)
 
 </div>
+
+<div class="fragment" data-fragment-index="1" style="float:left; width:75%;">
+</br>
 
 |           |  Stroke | No Stroke | Total|
 | :----     |:----:|:------:|:----:|
@@ -387,9 +392,11 @@ Francisco Pina Martins
 | Non-Smoker| 15   |  1883  | 1898 |
 | Total     | 46   |  3269  | 3315 |
 
-* &shy;<!-- .element: class="fragment" data-fragment-index="1"-->Risk of Stroke death = 46/3315 = 0.013876
-* &shy;<!-- .element: class="fragment" data-fragment-index="2"-->Smoker's risk of Stroke death = 31/1417 = 0.021877
-* &shy;<!-- .element: class="fragment" data-fragment-index="3"-->Non-Smoker's risk of Stroke death = 15/1898 = 0.007903
+</div>
+
+* &shy;<!-- .element: class="fragment" data-fragment-index="2"-->Risk of Stroke death = 46/3315 = 0.013876
+* &shy;<!-- .element: class="fragment" data-fragment-index="3"-->Smoker's risk of Stroke death = 31/1417 = 0.021877
+* &shy;<!-- .element: class="fragment" data-fragment-index="4"-->Non-Smoker's risk of Stroke death = 15/1898 = 0.007903
 
 |||
 
@@ -417,8 +424,11 @@ Francisco Pina Martins
 ```R
 library(epitools)
 
-binom.approx(31, 1417)  # Smoker stroke risk
-binom.approx(15, 1893)  # Non Smoker stroke risk
+# Smoker stroke risk
+binom.approx(31, 1417)
+
+# Since it is so easy, let's also calculate non-Smoker stroke risk
+binom.approx(15, 1893)
 ```
 
 </div>
@@ -429,9 +439,24 @@ binom.approx(15, 1893)  # Non Smoker stroke risk
 
 ### Risk Ratio CI
 
+* &shy;<!-- .element: class="fragment" -->A Risk Ratio measure is **way** more interesting than a single risk measurement.
+* &shy;<!-- .element: class="fragment" -->From the example: `RR = 0.021877/0.007903 = 2.768189`
+* &shy;<!-- .element: class="fragment" -->This measurement's CI is calculated with the formula:
+
+&shy;<!-- .element: class="fragment" -->`$$ \left( e^{log\left(\frac{a(c+d))}{c(a+b)}\right)-z_{1-\alpha/2}\sqrt{\frac{1}{a} - \frac{1}{a+b} + \frac{1}{c} - \frac{1}{c+d} } }, e^{log\left(\frac{a(c+d))}{c(a+b)}\right)+z_{1-\alpha/2}\sqrt{\frac{1}{a} - \frac{1}{a+b} + \frac{1}{c} - \frac{1}{c+d} } } \right) $$`
+
+* &shy;<!-- .element: class="fragment" -->Which becomes:
+
+&shy;<!-- .element: class="fragment" -->`$$ \left( e^{log(2.7682)\pm 1.96\sqrt{\frac{1}{31} - \frac{1}{1417} + \frac{1}{15} - \frac{1}{1898} } } \right) = (1.500, 5.108) $$`
+
+
+|||
+
+### Risk Ratio CI automation
+
 * &shy;<!-- .element: class="fragment" -->For RR we use `riskratio()` function from `epitools`
  * &shy;<!-- .element: class="fragment" -->Takes a data matrix as mandatory argument
-  * &shy;<!-- .element: class="fragment" -->Must be formated like this (or use `rev`):
+  * &shy;<!-- .element: class="fragment" -->Must be formated like this (or use the `rev` argument):
 
 <div class="fragment">
 
@@ -463,7 +488,7 @@ riskratio(stroke_table, rev="b")
 * &shy;<!-- .element: class="fragment" -->RD = 0.021877 - 0.007903 = 0.013974
 * &shy;<!-- .element: class="fragment" -->Obtian CI using the formula:
 
-&shy;<!-- .element: class="fragment" -->`$$ \left( r_E - r_{NE} \pm z_{1-\alpha/2} \sqrt{\frac{r_E (1-r_E)}{n_1} + \frac{r_{NE}(1-r_{NE})}{n_2}} \right)  $$`
+&shy;<!-- .element: class="fragment" -->`$$ \left( r_E - r_{NE} \pm z_{(1-\alpha/2)} \sqrt{\frac{r_E (1-r_E)}{n_1} + \frac{r_{NE}(1-r_{NE})}{n_2}} \right)  $$`
 
 <div class="fragment">
 
@@ -477,6 +502,8 @@ prop.test(cases, totals, correct=F)
 
 </div>
 
+* &shy;<!-- .element: class="fragment" -->Where `n1` is the total number of Exposed individuals
+* &shy;<!-- .element: class="fragment" -->And `n2` is the total number of Unexposed individuals
 * &shy;<!-- .element: class="fragment" -->CI is thus (0.005378793, 0.022569506)
 
 ---
@@ -490,7 +517,7 @@ prop.test(cases, totals, correct=F)
  * &shy;<!-- .element: class="fragment" -->OR = 0.022367/0.007966 = 2.8077
 * &shy;<!-- .element: class="fragment" -->To calculate the CI:
 
-&shy;<!-- .element: class="fragment" -->`$$ \left( log \left( \frac{ad}{bc} \right) \pm z_{1-\alpha/2} \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}} \right) $$`
+&shy;<!-- .element: class="fragment" -->`$$ \left( log \left( \frac{ad}{bc} \right) \pm z_{(1-\alpha/2)} \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}} \right) $$`
 
 |||
 
