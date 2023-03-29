@@ -50,7 +50,7 @@ Francisco Pina Martins
 * &shy;<!-- .element: class="fragment" -->Controls are representative of **a sample** of the population-at-risk
  * &shy;<!-- .element: class="fragment" -->Risk measure denominator (population-at-risk) is unknown
 * &shy;<!-- .element: class="fragment" -->Number of cases and controls are set during design phase
- * &shy;<!-- .element: class="fragment" style="color:#e7ad52" -->Ratio of controls to cases is not biologically meaningful
+ * &shy;<!-- .element: class="fragment" style="color:red" -->Ratio of controls to cases is not biologically meaningful
 
 ---
 
@@ -251,12 +251,12 @@ Francisco Pina Martins
 ### Cohort establishment
 
 * &shy;<!-- .element: class="fragment" -->Can be based on any common characteristic:
- * &shy;<!-- .element: class="fragment" -->Zip code
- * &shy;<!-- .element: class="fragment" -->Education
- * &shy;<!-- .element: class="fragment" -->Age
- * &shy;<!-- .element: class="fragment" -->Agent exposure
-  * &shy;<!-- .element: class="fragment" -->Must be known at baseline (Eg. Coffee drinkers Vs. Non drinkers)
-  * &shy;<!-- .element: class="fragment" -->Can be divided in multiple categories (Eg. How many coffee cups consumed per day)
+  * &shy;<!-- .element: class="fragment" -->Zip code
+  * &shy;<!-- .element: class="fragment" -->Education
+  * &shy;<!-- .element: class="fragment" -->Age
+  * &shy;<!-- .element: class="fragment" -->Agent exposure
+    * &shy;<!-- .element: class="fragment" -->Must be known at baseline (Eg. Coffee drinkers Vs. Non drinkers)
+    * &shy;<!-- .element: class="fragment" -->Can be divided in multiple categories (Eg. How many coffee cups consumed per day)
 * &shy;<!-- .element: class="fragment" -->Determine follow-up period
 
 |||
@@ -550,6 +550,7 @@ oddsratio.wald(stroke_table, rev="b")
 ```R
 library(epitools)
 ##Examples from Rothman 1998, p. 238 (straight from the docs)
+## "bc" stands for "Breast Cancer"
 bc <- c(Unexposed = 15, Exposed = 41)
 pyears <- c(Unexposed = 19017, Exposed = 28010)
 dd <- matrix(c(41,15,28010,19017),2,2)
