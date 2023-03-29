@@ -3,7 +3,7 @@ library(epitools)
 
 # Case-control studies
 # a) and b)
-gloves = read.csv("https://stuntspt.gitlab.io/FE2022/classes/exercises/gloves.csv", sep = ";")
+gloves = read.csv("https://stuntspt.gitlab.io/FE2023/classes/exercises/gloves.csv", sep = ";")
 
 # Remove the subject IDs and turn them to a 2x2 table
 gloves_mtx = t(table(gloves[,-1]))
