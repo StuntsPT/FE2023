@@ -223,7 +223,7 @@ Cfr2023 = 6824601/683101529  # 0.00999
 
 ### RR example
 
-Incidence of *Mycobacterium tuberculosis* Infection Among Congregated, HIV-Infected Prison Inmates by Dormitory Wing — South Carolina, 1999
+[Incidence of *Mycobacterium tuberculosis* Infection](https://pubmed.ncbi.nlm.nih.gov/12870688/) Among Congregated, HIV-Infected Prison Inmates by Dormitory Wing — South Carolina, 1999
 
 ![Tuberculosis table](C02_assets/E_D_table_example.png)
 
@@ -247,10 +247,28 @@ RR = Rexp/RNexp  # 6.108 - East Wing inmates are 6.1x more likely to be infected
 
 &shy;<!-- .element: class="fragment" -->`$$ RD = \frac{C_E}{N_E} - \frac{C_\bar{E}}{N_\bar{E}} $$`
 
+<div style="float:left; width:65%;">
+
 * &shy;<!-- .element: class="fragment" -->C<sub>E</sub> = Cases in exposed group
 * &shy;<!-- .element: class="fragment" -->N<sub>E</sub> = Total subjects in exposed group
 * &shy;<!-- .element: class="fragment" -->C<sub>Ē</sub> = Cases in unexposed group
 * &shy;<!-- .element: class="fragment" -->N<sub>Ē</sub> = Total subjects in unexposed group
+
+</div>
+<div style="float:right; width:35%;" class="fragment">
+
+```R
+Rexp = 28/157
+# 0.17834 - 17.8% risk of being infected 
+
+RNexp = 4/137
+# 0.02920 - 2.92% risk of being infected
+
+RD = Rexp - RNexp
+# 0.1491 - East Wing inmates are 14.91% more likely to be infected than West Wing inmates
+```
+
+</div>
 
 ---
 
@@ -281,7 +299,7 @@ RR = Rexp/RNexp  # 6.108 - East Wing inmates are 6.1x more likely to be infected
 
 ### OR example
 
-Incidence of *Mycobacterium tuberculosis* Infection Among Congregated, HIV-Infected Prison Inmates by Dormitory Wing — South Carolina, 1999
+[Incidence of *Mycobacterium tuberculosis* Infection](https://pubmed.ncbi.nlm.nih.gov/12870688/) Among Congregated, HIV-Infected Prison Inmates by Dormitory Wing — South Carolina, 1999
 
 ![Tuberculosis table](C02_assets/E_D_table_example.png)
 
@@ -413,7 +431,7 @@ rel_tub_table = proportions(tub_table, 1)  # Notice the "margin" argument!
 print(rel_tub_table)
 
 barplot(t(tub_table), beside=T, col=sequential_hcl(2),
-        ylim=c(0, max(tub_table)), ylab="Indivíduos", axes=F)
+        ylim=c(0, max(tub_table)), ylab="Individuals", axes=F)
 
 axis(2, at=round(seq(0, max(tub_table), length.out=7), 0), las=1)
 
@@ -444,7 +462,7 @@ set.seed(1235813)
 
 # Draw 'random' values from a normal distribution
 Fz = rnorm(50, 160, 6)
-Mz = rnorm(50, 170, 9)
+Mz = rnorm(50, 170, 8)
 
 # Tidy it up in a dataframe
 Zdata = data.frame(Fz, Mz)
@@ -519,7 +537,7 @@ boxplot(Zdata, col=c("#bbbbd5", "#b1dbbe"),
   * &shy;<!-- .element: class="fragment" -->Individual values (bar plot)
 * &shy;<!-- .element: class="fragment" -->But first let's obtain some data to plot
 
-<div class="fragment">
+<div class="fragment8>
 
 ```R
 # Number of new HIV cases in belgium from 2006-2018
