@@ -73,7 +73,7 @@ Francisco Pina Martins
 
 ### Not on ~~night's~~ my watch!
 
-* &shy;<!-- .element: class="fragment" -->1954 - Outbreak in Soho
+* &shy;<!-- .element: class="fragment" -->1854 - Outbreak in Soho
   * &shy;<!-- .element: class="fragment" -->500 dead
   * &shy;<!-- .element: class="fragment" -->JS surveys the area (questions everyone)
 
