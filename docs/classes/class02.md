@@ -537,7 +537,7 @@ boxplot(Zdata, col=c("#bbbbd5", "#b1dbbe"),
   * &shy;<!-- .element: class="fragment" -->Individual values (bar plot)
 * &shy;<!-- .element: class="fragment" -->But first let's obtain some data to plot
 
-<div class="fragment8>
+<div class="fragment">
 
 ```R
 # Number of new HIV cases in belgium from 2006-2018
