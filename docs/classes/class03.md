@@ -388,7 +388,7 @@ Francisco Pina Martins
 
 |           |  Stroke | No Stroke | Total|
 | :----     |:----:|:------:|:----:|
-| Smoker    | 31   |  1386  | 1471 |
+| Smoker    | 31   |  1386  | 1417 |
 | Non-Smoker| 15   |  1883  | 1898 |
 | Total     | 46   |  3269  | 3315 |
 
