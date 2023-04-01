@@ -48,8 +48,8 @@ Francisco Pina Martins
 
 |                               | Cholera | No cholera | Total |
 |:---                           |:-------:|:----------:|:-----:|
-| Within Broad St. range        | 60  [1] | 220   [2]  | 280   |
-| Outside Broad St. range       | 40  [3] | 680   [4]  | 720   |
+| Within Broad St. range        | 60      | 220        | 280   |
+| Outside Broad St. range       | 40      | 680        | 720   |
 | Total:                        | 100     | 900        | 1000  |
 
 </div>
@@ -501,5 +501,5 @@ print(my_frag)
 * [Randomized control trials - a summary](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC10.pdf)
 * [Short notes on RCTs](https://www.healthknowledge.org.uk/e-learning/epidemiology/practitioners/introduction-study-design-is-rct)
 * [Analyses of Randomized Control trials](https://academic.oup.com/epirev/article/24/1/26/2754706)
-* [Paper on phases](https://dx.doi.org/10.2147%2FCOPD.S244942)
+* [Paper on RCT phases](https://dx.doi.org/10.2147%2FCOPD.S244942)
 * [Fragility index](https://www.psychiatrist.com/read-pdf/21994/)
