@@ -4,7 +4,7 @@
 
 <img src="common/logo-FCUL.png" style="background:none; border:none; box-shadow:none;">
 
-Francisco Pina Martins
+[@FPinaMartins](https://twitter.com/FPinaMartins)
 
 ---
 
