@@ -35,7 +35,7 @@ riskratio(contingency_table)
 oddsratio.small(contingency_table, rev="n")
 
 # These results are compatible with the paper's, but not exactly the same.
-# This is likely do to the SPSS Vs. R calculation differences.
+# This is likely due to the SPSS Vs. R calculation differences.
 
 soccer_fragility = frag.study(ivg_injuries, intervention_group, ctg_injuries, control_group)
 
