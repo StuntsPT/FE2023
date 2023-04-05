@@ -6,7 +6,7 @@
 #a)
 library(epitools)
 
-foot_data = read.csv("https://stuntspt.gitlab.io/FE2021/classes/exercises/foot.csv", sep = ";")[,-1]
+foot_data = read.csv("https://stuntspt.gitlab.io/FE2023/classes/exercises/foot.csv", sep = ";")[,-1]
 OE_table = t(table(foot_data[,c(1,2)]))
 oddsratio.wald(OE_table)
 
