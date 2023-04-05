@@ -72,9 +72,9 @@
 
 ### What is a confounder?
 
-* &shy;<!-- .element: class="fragment" -->Epidemiological studies try to associate *risk factor* to *outcome*
+* &shy;<!-- .element: class="fragment" -->Epidemiological studies try to associate *exposure* to *outcome*
 * &shy;<!-- .element: class="fragment" -->Other factors that can also explain such association are called *confounders*
-* &shy;<!-- .element: class="fragment" -->Can cause over or under estimate of a measure
+* &shy;<!-- .element: class="fragment" -->Can cause over or under estimation of a measure
 * &shy;<!-- .element: class="fragment" -->Are actually very common
 * &shy;<!-- .element: class="fragment" -->Can be adjusted for
 
@@ -249,7 +249,10 @@ riskratio(healthy_intestines_data, rev="b")
 
 * &shy;<!-- .element: class="fragment" -->Is the variable differentially distributed between E and Ē?
 
-&shy;<!-- .element: class="fragment" -->``$$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!} $$``
+<!-- &shy;<!-- .element: class="fragment" -- >``$$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!} $$`` -->
+
+</br>
+</br>
 
 <div style="color:#bde0fe" class="fragment">
 
@@ -259,6 +262,9 @@ riskratio(healthy_intestines_data, rev="b")
 | No folic acid supplement | 494                  | 800                |  1294 |
 
 </div>
+
+</br>
+</br>
 
 <div class="fragment">
 
@@ -295,7 +301,7 @@ chisq.test(independence_table)
  * &shy;<!-- .element: class="fragment" -->The measure of association using only subjects **affected** by the variable of interest (A)ffected
  * &shy;<!-- .element: class="fragment" -->The measure of association using only subjects **not affected** by the variable of interest (U)naffected
 * &shy;<!-- .element: class="fragment" -->EMM is likely if `A < C < U` or `A > C > U`
- * &shy;<!-- .element: class="fragment" -->There is no rule of thumb to decide how different `A, C and U` must be in order to identify EMM
+ * &shy;<!-- .element: class="fragment" -->There is no rule of thumb to decide how different `A, C`, and `U` must be in order to identify EMM
 * &shy;<!-- .element: class="fragment" -->If there is no evidence of EMM, the crude measure can be tweaked
 
 ---
@@ -313,6 +319,10 @@ chisq.test(independence_table)
 |||
 
 ### What if there is evidence of confounding?
+
+* &shy;<!-- .element: class="fragment" -->`epi.2by2` can be used to tweak association measures
+
+<div class="fragment">
 
 ```R
 install.packages("epiR")
@@ -340,8 +350,7 @@ adj_values = epi.2by2(dat = stratified_table, method = "cohort.count",
 print(adj_values)
 ```
 
-* &shy;<!-- .element: class="fragment" -->Differences > 10% between crude and adjusted values suggest confounding
-* &shy;<!-- .element: class="fragment" -->Significant Chi² results suggest EMM
+</div>
 
 ---
 
@@ -392,7 +401,6 @@ print(adj_values)
 my_model = glm(Skin.rash ~ Latex_gloves, data=gloves2, family=binomial(link="logit"))
 summary(my_model)
 
-library(MASS)
 exp(cbind(coef(my_model), confint(my_model)))
 
 # Expand to a confounder
@@ -417,7 +425,6 @@ exp(cbind(coef(my_single_model), confint(my_single_model)))
 
 * [Types of bias](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC14.pdf)
 * [ERIC](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC11.pdf)
-* [Confounding in linear regression](https://sphweb.bumc.bu.edu/otlt/MPH-Modules/PH717-QuantCore/PH717_MultipleVariableRegression/PH717_MultipleVariableRegression5.html)
 * [Epi.2by2](https://www.rdocumentation.org/packages/epiR/versions/2.0.19/topics/epi.2by2)
 * [Assessing EMM](https://sph.unc.edu/wp-content/uploads/sites/112/2015/07/nciph_ERIC12.pdf)
 * [EMM from scratch](https://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704-EP713_Confounding-EM/BS704-EP713_Confounding-EM8.html)
