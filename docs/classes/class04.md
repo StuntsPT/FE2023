@@ -440,12 +440,12 @@ fisher.test(phase_2)
 <div class="fragment">
 
 ```R
-phase_2 = matrix(c(641, 206, 422, 463), byrow=T, 2, 2)
-colnames(phase_2) = c("Recovered", "Diseased")
-rownames(phase_2) = c("Treatment", "Control")
+phase_3 = matrix(c(641, 206, 422, 463), byrow=T, 2, 2)
+colnames(phase_3) = c("Recovered", "Diseased")
+rownames(phase_3) = c("Treatment", "Control")
 
-fisher.test(phase_2)
-chisq.test(phase_2)
+fisher.test(phase_3)
+chisq.test(phase_3)
 
 ```
 
